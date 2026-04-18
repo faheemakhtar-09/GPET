@@ -2,132 +2,112 @@ type Lang = "en" | "hi";
 
 const rewardsCopy = {
   en: {
-    badge: "Rewards & Analytics",
-    title: "Beyond the Exam",
-    highlight: "Precision Analytics & Merit Rewards",
+    badge: "Rewards & Recognition 2026",
+    title: "Celebrate Merit",
+    highlight: "Up to 30,000+ Physical Rewards",
     subtitle:
-      "GPET is not just an exam. It is a performance intelligence layer designed to help students understand strengths, improve decisions, and unlock meaningful rewards.",
-    analyticsBadge: "Precision Analytics",
-    analyticsTitle: "Your exam becomes a career compass",
-    analyticsQuote: "GPET is not just an exam, it is the GPS of your academic future.",
-    analyticsCards: [
+      "GPET 2026 is dedicated to celebrating the academic brilliance of Uttar Pradesh. Our reward ecosystem scales with participation, so the final reward pool grows with the community.",
+    tiersTitle: "The Merit Tiers",
+    tiersIntro:
+      "Rewards are distributed through a percentile-based scaling model across state, zonal, and district recognition levels.",
+    tierCards: [
       {
-        title: "Comprehensive Performance Report",
+        label: "State Level Excellence",
+        subtitle: "Top-performing students across the state",
         points: [
-          "Percentile-based standing across large student participation in Uttar Pradesh.",
-          "Subject-wise proficiency insights to identify strength and improvement areas.",
-          "Time management and accuracy observations based on exam behavior.",
+          "Ultra-premium laptops and gold-plated trophies.",
+          "Recognition at the Grand State Ceremony in Noida/Lucknow.",
+          "Full higher education scholarship grants.",
         ],
       },
       {
-        title: "AI Career Matching Engine",
+        label: "Zonal Level Merit",
+        subtitle: "Top performers across 18 zones",
         points: [
-          "Skill mapping across fields like engineering, civil services, arts, and technology.",
-          "Future pathway recommendations based on performance patterns and percentile bands.",
-          "Industry alignment insights to connect current aptitude with emerging demands.",
-        ],
-      },
-    ],
-    rewardsBadge: "The GPET Hall of Fame",
-    rewardsTitle: "Recognition built for the modern scholar",
-    rewardsCards: [
-      {
-        title: "Digital Empowerment Suite",
-        points: [
-          "Flagship laptops and tablets for advanced learning and research.",
-          "High-end smartphones and smartwatches to stay connected and productive.",
+          "High-performance tablets and silver medals.",
+          "Zonal excellence certificates.",
+          "Entrance coaching aid and skill development kits.",
         ],
       },
       {
-        title: "Merit Funding",
+        label: "District Level Achievers",
+        subtitle: "Top merit across all 75 districts",
         points: [
-          "Higher education grants for top percentile holders.",
-          "Elite coaching aid for JEE, NEET, and CUET preparation support.",
-        ],
-      },
-      {
-        title: "Recognition Tiers",
-        points: [
-          "State toppers receive GPET Gold Medal honors and grand recognition.",
-          "Zonal toppers receive excellence certificates and premium gadgets.",
-          "District toppers across all 75 districts receive trophies and tech kits.",
-        ],
-      },
-      {
-        title: "Verified Credentials",
-        points: [
-          "Blockchain-secured certificates designed to be trusted and tamper-resistant.",
+          "Smartphones, smartwatches, and bronze medals.",
+          "District topper digital badges.",
+          "Career roadmap access and internship opportunities.",
         ],
       },
     ],
-    noteTitle: "Privacy Note",
-    note:
-      "Your performance data is an Amanat. We use it to empower students, not to sell data.",
+    policyTitle: "Transparency Policy",
+    policyPoints: [
+      "The final volume of physical rewards is pro-rated based on the total verified examination participants.",
+      'All mentions of "Upto 30,000 rewards" refer to the maximum potential reward pool at the 20-Lakh student participation milestone.',
+      "Performance metrics and identity are verified through AI-proctoring and document audits before award disbursement.",
+      "Rewards are strictly percentile-based to ensure fairness across Science, Commerce, and Arts streams.",
+    ],
+    beyondTitle: "Beyond Physical Awards",
+    beyondPoints: [
+      "Blockchain-verified participation certificate.",
+      "AI-driven precision performance report.",
+      "Personalized career matching roadmap.",
+    ],
     initiative: "An initiative by Faisal Khan.",
+    designation: "Founder & CEO, Gradorra Private Limited.",
   },
   hi: {
-    badge: "Rewards & Analytics",
-    title: "परीक्षा से आगे",
-    highlight: "Precision Analytics और Merit Rewards",
+    badge: "Rewards & Recognition 2026",
+    title: "Merit ka Celebration",
+    highlight: "Upto 30,000+ तक Physical Rewards",
     subtitle:
-      "GPET सिर्फ एक exam नहीं है। यह एक performance intelligence layer है जो students को अपनी strengths समझने, बेहतर decisions लेने और meaningful rewards unlock करने में मदद करती है।",
-    analyticsBadge: "Precision Analytics",
-    analyticsTitle: "आपका exam बनता है career compass",
-    analyticsQuote: "GPET सिर्फ एक exam नहीं, आपके academic future ka GPS है।",
-    analyticsCards: [
+      "GPET 2026 Uttar Pradesh ki academic brilliance ko celebrate karne ke liye dedicated hai. Reward ecosystem participation ke saath scale karta hai, isliye final reward pool community ke saath grow karta hai.",
+    tiersTitle: "Merit Tiers",
+    tiersIntro:
+      "Rewards percentile-based scaling model ke through state, zonal, aur district recognition levels par distribute honge.",
+    tierCards: [
       {
-        title: "Comprehensive Performance Report",
+        label: "State Level Excellence",
+        subtitle: "State ke top-performing students",
         points: [
-          "Uttar Pradesh के बड़े student base के बीच percentile-based standing.",
-          "Subject-wise proficiency insights ताकि strength और improvement areas समझ आएं.",
-          "Exam behavior के आधार par time management और accuracy observations.",
+          "Ultra-premium laptops aur gold-plated trophies.",
+          "Noida/Lucknow ke Grand State Ceremony mein recognition.",
+          "Full higher education scholarship grants.",
         ],
       },
       {
-        title: "AI Career Matching Engine",
+        label: "Zonal Level Merit",
+        subtitle: "18 zones ke top performers",
         points: [
-          "Engineering, civil services, arts, और technology जैसे fields ke साथ skill mapping.",
-          "Performance patterns और percentile bands ke basis par future pathway recommendations.",
-          "Current aptitude ko emerging industry demands se align karne ke insights.",
-        ],
-      },
-    ],
-    rewardsBadge: "The GPET Hall of Fame",
-    rewardsTitle: "Modern scholar ke liye meaningful recognition",
-    rewardsCards: [
-      {
-        title: "Digital Empowerment Suite",
-        points: [
-          "Advanced learning aur research ke liye flagship laptops aur tablets.",
-          "Connected aur productive rehne ke लिए high-end smartphones aur smartwatches.",
+          "High-performance tablets aur silver medals.",
+          "Zonal excellence certificates.",
+          "Entrance coaching aid aur skill development kits.",
         ],
       },
       {
-        title: "Merit Funding",
+        label: "District Level Achievers",
+        subtitle: "75 districts ke top merit achievers",
         points: [
-          "Top percentile holders ke लिए higher education grants.",
-          "JEE, NEET, aur CUET preparation ke लिए elite coaching support.",
-        ],
-      },
-      {
-        title: "Recognition Tiers",
-        points: [
-          "State toppers ko GPET Gold Medal aur grand recognition diya jayega.",
-          "Zonal toppers ko excellence certificates aur premium gadgets milenge.",
-          "75 districts ke district toppers ko trophies aur tech kits diye jayenge.",
-        ],
-      },
-      {
-        title: "Verified Credentials",
-        points: [
-          "Blockchain-secured certificates jo trusted aur tamper-resistant honge.",
+          "Smartphones, smartwatches, aur bronze medals.",
+          "District topper digital badges.",
+          "Career roadmap access aur internship opportunities.",
         ],
       },
     ],
-    noteTitle: "Privacy Note",
-    note:
-      "Aapka performance data ek Amanat hai. Hum students ko empower karte hain, data sell nahi karte.",
+    policyTitle: "Transparency Policy",
+    policyPoints: [
+      "Physical rewards ka final volume total verified participants ke hisab se pro-rated hoga.",
+      '“Upto 30,000 rewards” ka reference 20-Lakh participation milestone par maximum potential reward pool ko dikhata hai.',
+      "Award disbursement se pehle performance aur identity AI-proctoring aur document audits se verify hongi.",
+      "Science, Commerce, aur Arts sab ke liye rewards strictly percentile-based honge.",
+    ],
+    beyondTitle: "Beyond Physical Awards",
+    beyondPoints: [
+      "Blockchain-verified participation certificate.",
+      "AI-driven precision performance report.",
+      "Personalized career matching roadmap.",
+    ],
     initiative: "Faisal Khan ki ek initiative.",
+    designation: "Founder & CEO, Gradorra Private Limited.",
   },
 };
 
@@ -135,32 +115,6 @@ function SectionBadge({ children }: { children: React.ReactNode }) {
   return (
     <div className="inline-flex rounded-full border border-[#e8732a]/15 bg-[#fff4ed] px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-[#e8732a]">
       {children}
-    </div>
-  );
-}
-
-function InfoCard({
-  title,
-  points,
-}: {
-  title: string;
-  points: string[];
-}) {
-  return (
-    <div className="rounded-[24px] border border-[#e8732a]/10 bg-white p-6 shadow-[0_14px_34px_rgba(232,115,42,0.06)]">
-      <h3 className="text-xl font-bold tracking-[-0.02em] text-[#2f1608]">
-        {title}
-      </h3>
-      <ul className="mt-4 space-y-3">
-        {points.map((point) => (
-          <li
-            key={point}
-            className="rounded-2xl border border-[#e8732a]/8 bg-[#fffaf7] px-4 py-3 text-sm leading-7 text-[#2f1608]/75"
-          >
-            {point}
-          </li>
-        ))}
-      </ul>
     </div>
   );
 }
@@ -192,55 +146,89 @@ export default function RewardsPage({ lang = "en" }: { lang?: Lang }) {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="grid gap-6 lg:grid-cols-12">
-          <div className="rounded-[28px] border border-[#e8732a]/10 bg-[#fffaf7] p-6 shadow-[0_16px_40px_rgba(232,115,42,0.06)] lg:col-span-4">
-            <SectionBadge>{t.analyticsBadge}</SectionBadge>
-            <h2 className="mt-5 text-3xl font-bold leading-[1.05] tracking-[-0.03em] text-[#2f1608]">
-              {t.analyticsTitle}
-            </h2>
-            <p className="mt-5 rounded-2xl border border-[#e8732a]/12 bg-white p-5 text-lg font-semibold leading-8 text-[#2f1608]">
-              “{t.analyticsQuote}”
-            </p>
-          </div>
-
-          <div className="grid gap-6 lg:col-span-8 md:grid-cols-2">
-            {t.analyticsCards.map((card) => (
-              <InfoCard key={card.title} title={card.title} points={card.points} />
-            ))}
-          </div>
+      <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+        <div className="max-w-3xl">
+          <SectionBadge>{t.tiersTitle}</SectionBadge>
+          <h2 className="mt-5 text-[clamp(2rem,4vw,3.2rem)] font-bold leading-[1.02] tracking-[-0.03em] text-[#2f1608]">
+            Recognition that scales with merit
+          </h2>
+          <p className="mt-4 text-base leading-8 text-[#2f1608]/72 sm:text-lg">
+            {t.tiersIntro}
+          </p>
         </div>
-      </section>
 
-      <section className="border-y border-[#e8732a]/10 bg-[#fffaf7]">
-        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <SectionBadge>{t.rewardsBadge}</SectionBadge>
-            <h2 className="mt-5 text-[clamp(2rem,4vw,3.4rem)] font-bold leading-[1.02] tracking-[-0.03em] text-[#2f1608]">
-              {t.rewardsTitle}
-            </h2>
-          </div>
-
-          <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            {t.rewardsCards.map((card) => (
-              <InfoCard key={card.title} title={card.title} points={card.points} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="rounded-[28px] border border-[#e8732a]/10 bg-white p-6 shadow-[0_16px_40px_rgba(232,115,42,0.05)] sm:p-8">
-          <div className="grid gap-6 lg:grid-cols-[1.4fr_0.8fr] lg:items-end">
-            <div>
-              <SectionBadge>{t.noteTitle}</SectionBadge>
-              <p className="mt-5 max-w-3xl text-base leading-8 text-[#2f1608]/75 sm:text-lg">
-                {t.note}
+        <div className="mt-10 grid gap-6 lg:grid-cols-3">
+          {t.tierCards.map((card) => (
+            <article
+              key={card.label}
+              className="rounded-[26px] border border-[#e8732a]/10 bg-[#fffaf7] p-6 shadow-[0_14px_34px_rgba(232,115,42,0.05)]"
+            >
+              <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#e8732a]">
+                {card.label}
               </p>
+
+              <h3 className="mt-2 text-xl font-bold tracking-[-0.02em] text-[#2f1608]">
+                {card.subtitle}
+              </h3>
+
+              <ul className="mt-5 space-y-3">
+                {card.points.map((point) => (
+                  <li
+                    key={point}
+                    className="text-sm leading-7 text-[#2f1608]/72"
+                  >
+                    • {point}
+                  </li>
+                ))}
+              </ul>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="border-t border-[#e8732a]/10 bg-[#fffaf7]">
+        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+          <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
+            <div className="rounded-[28px] border border-[#e8732a]/10 bg-white p-6 shadow-[0_16px_40px_rgba(232,115,42,0.05)] sm:p-8">
+              <SectionBadge>{t.policyTitle}</SectionBadge>
+              <ul className="mt-6 space-y-4">
+                {t.policyPoints.map((point) => (
+                  <li
+                    key={point}
+                    className="rounded-2xl border border-[#e8732a]/8 bg-[#fffaf7] px-4 py-4 text-sm leading-7 text-[#2f1608]/75"
+                  >
+                    {point}
+                  </li>
+                ))}
+              </ul>
             </div>
 
-            <div className="rounded-2xl border border-[#e8732a]/12 bg-[#fffaf7] px-5 py-5 text-right">
-              <p className="text-sm text-[#2f1608]/65">{t.initiative}</p>
+            <div className="flex flex-col gap-6">
+              <div className="rounded-[28px] border border-[#e8732a]/10 bg-white p-6 shadow-[0_16px_40px_rgba(232,115,42,0.05)] sm:p-8">
+                <SectionBadge>{t.beyondTitle}</SectionBadge>
+                <ul className="mt-6 space-y-4">
+                  {t.beyondPoints.map((point) => (
+                    <li
+                      key={point}
+                      className="text-sm leading-7 text-[#2f1608]/75"
+                    >
+                      • {point}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="rounded-[28px] bg-[#2f1608] p-6 text-white shadow-[0_18px_45px_rgba(47,22,8,0.16)] sm:p-8">
+                <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#f0a26d]">
+                  Initiative
+                </p>
+                <p className="mt-3 text-lg font-semibold leading-8">
+                  {t.initiative}
+                </p>
+                <p className="mt-2 text-sm text-white/72">
+                  {t.designation}
+                </p>
+              </div>
             </div>
           </div>
         </div>

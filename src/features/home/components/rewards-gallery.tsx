@@ -25,7 +25,7 @@ const rewards = [
     count: "Upto 30,000+ Rewards",
     icon: Trophy,
     desc: "Recognition and rewards designed to motivate students at district, zonal, and state levels.",
-    points: ["लैपटॉप / टैबलेट / स्मार्टफोन / छात्रवृत्ति / स्टडी किट्स", "30,000+ पुरस्कार"],
+    points: ["लैपटॉप / टैबलेट / स्मार्टफोन / छात्रवृत्ति / स्टडी किट्स", "Upto 30,000+ पुरस्कार"],
   },
 ];
 
