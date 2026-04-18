@@ -196,8 +196,16 @@ export default function HeroSection() {
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
-            <button className="inline-flex animate-[heroPulse_2.4s_ease-in-out_infinite] items-center justify-center rounded-lg bg-[#E8732A] px-6 py-3.5 font-inter text-sm font-bold text-white shadow-[0_10px_24px_rgba(232,115,42,0.28)] transition duration-200 hover:scale-[1.02] hover:bg-[#D9651F]">
-              Register Now
+            <button
+              onClick={() =>
+                window.open(
+                  "https://docs.google.com/forms/d/e/1FAIpQLSdPNfs4bE48pYsGDQbTCubV6OwFMJpcFcmk70JT6QrzwXoraA/viewform?usp=dialog",
+                  "_blank",
+                )
+              }
+              className="inline-flex animate-[heroPulse_2.4s_ease-in-out_infinite] items-center justify-center rounded-lg bg-[#E8732A] px-6 py-3.5 font-inter text-sm font-bold text-white shadow-[0_10px_24px_rgba(232,115,42,0.28)] transition duration-200 hover:scale-[1.02] hover:bg-[#D9651F]"
+            >
+              Pre Register Now
             </button>
 
             <div className="flex items-center gap-3 text-[#244C9A]/70">
