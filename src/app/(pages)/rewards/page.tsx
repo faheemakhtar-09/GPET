@@ -99,14 +99,14 @@ const rewardsCopy = {
         title: "Digital Empowerment Suite",
         points: [
           "Advanced learning aur research ke liye flagship laptops aur tablets.",
-          "Connected aur productive rehne ke liye high-end smartphones aur smartwatches.",
+          "Connected aur productive rehne ke लिए high-end smartphones aur smartwatches.",
         ],
       },
       {
         title: "Merit Funding",
         points: [
-          "Top percentile holders ke liye higher education grants.",
-          "JEE, NEET, aur CUET preparation ke liye elite coaching support.",
+          "Top percentile holders ke लिए higher education grants.",
+          "JEE, NEET, aur CUET preparation ke लिए elite coaching support.",
         ],
       },
       {
@@ -148,14 +148,14 @@ function InfoCard({
 }) {
   return (
     <div className="rounded-[24px] border border-[#e8732a]/10 bg-white p-6 shadow-[0_14px_34px_rgba(232,115,42,0.06)]">
-      <h3 className="font-montserrat text-xl font-bold tracking-[-0.02em] text-[#2f1608]">
+      <h3 className="text-xl font-bold tracking-[-0.02em] text-[#2f1608]">
         {title}
       </h3>
       <ul className="mt-4 space-y-3">
         {points.map((point) => (
           <li
             key={point}
-            className="rounded-2xl border border-[#e8732a]/8 bg-[#fffaf7] px-4 py-3 font-inter text-sm leading-7 text-[#2f1608]/75"
+            className="rounded-2xl border border-[#e8732a]/8 bg-[#fffaf7] px-4 py-3 text-sm leading-7 text-[#2f1608]/75"
           >
             {point}
           </li>
@@ -180,12 +180,12 @@ export default function RewardsPage({ lang = "en" }: { lang?: Lang }) {
           <div className="max-w-4xl">
             <SectionBadge>{t.badge}</SectionBadge>
 
-            <h1 className="mt-5 font-montserrat text-[clamp(2.5rem,6vw,5rem)] font-bold leading-[0.96] tracking-[-0.04em] text-[#2f1608]">
+            <h1 className="mt-5 text-[clamp(2.5rem,6vw,5rem)] font-bold leading-[0.96] tracking-[-0.04em] text-[#2f1608]">
               {t.title}
               <span className="block text-[#e8732a]">{t.highlight}</span>
             </h1>
 
-            <p className="mt-6 max-w-3xl font-inter text-base leading-8 text-[#2f1608]/72 sm:text-lg">
+            <p className="mt-6 max-w-3xl text-base leading-8 text-[#2f1608]/72 sm:text-lg">
               {t.subtitle}
             </p>
           </div>
@@ -196,10 +196,10 @@ export default function RewardsPage({ lang = "en" }: { lang?: Lang }) {
         <div className="grid gap-6 lg:grid-cols-12">
           <div className="rounded-[28px] border border-[#e8732a]/10 bg-[#fffaf7] p-6 shadow-[0_16px_40px_rgba(232,115,42,0.06)] lg:col-span-4">
             <SectionBadge>{t.analyticsBadge}</SectionBadge>
-            <h2 className="mt-5 font-montserrat text-3xl font-bold leading-[1.05] tracking-[-0.03em] text-[#2f1608]">
+            <h2 className="mt-5 text-3xl font-bold leading-[1.05] tracking-[-0.03em] text-[#2f1608]">
               {t.analyticsTitle}
             </h2>
-            <p className="mt-5 rounded-2xl border border-[#e8732a]/12 bg-white p-5 font-montserrat text-lg font-semibold leading-8 text-[#2f1608]">
+            <p className="mt-5 rounded-2xl border border-[#e8732a]/12 bg-white p-5 text-lg font-semibold leading-8 text-[#2f1608]">
               “{t.analyticsQuote}”
             </p>
           </div>
@@ -216,7 +216,7 @@ export default function RewardsPage({ lang = "en" }: { lang?: Lang }) {
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <SectionBadge>{t.rewardsBadge}</SectionBadge>
-            <h2 className="mt-5 font-montserrat text-[clamp(2rem,4vw,3.4rem)] font-bold leading-[1.02] tracking-[-0.03em] text-[#2f1608]">
+            <h2 className="mt-5 text-[clamp(2rem,4vw,3.4rem)] font-bold leading-[1.02] tracking-[-0.03em] text-[#2f1608]">
               {t.rewardsTitle}
             </h2>
           </div>
@@ -234,13 +234,13 @@ export default function RewardsPage({ lang = "en" }: { lang?: Lang }) {
           <div className="grid gap-6 lg:grid-cols-[1.4fr_0.8fr] lg:items-end">
             <div>
               <SectionBadge>{t.noteTitle}</SectionBadge>
-              <p className="mt-5 max-w-3xl font-inter text-base leang-8 text-[#2f1608]/75 sm:text-lg">
+              <p className="mt-5 max-w-3xl text-base leading-8 text-[#2f1608]/75 sm:text-lg">
                 {t.note}
               </p>
             </div>
 
             <div className="rounded-2xl border border-[#e8732a]/12 bg-[#fffaf7] px-5 py-5 text-right">
-              <p className="font-inter text-sm text-[#2f1608]/65">{t.initiative}</p>
+              <p className="text-sm text-[#2f1608]/65">{t.initiative}</p>
             </div>
           </div>
         </div>

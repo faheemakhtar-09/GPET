@@ -6,11 +6,12 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import TranslateSwitcher from "../common/translate-switcher";
+import { useRouter } from "next/navigation";
 
 const navItems = [
   { label: "Home", href: "/" },
   { label: "About GPET", href: "/about" },
-  { label: "Rewards 30K", href: "/rewards-30k" },
+  { label: "Rewards 30K", href: "/rewards" },
   { label: "Eligibility", href: "/eligibility" },
   { label: "Partners", href: "/partners" },
 ];
@@ -18,11 +19,11 @@ const navItems = [
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
+  const router = useRouter();
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-[#E8732A]/12 bg-white/95 backdrop-blur-md shadow-[0_10px_30px_rgba(36,76,154,0.06)]">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <Image
@@ -72,7 +73,10 @@ export default function Navbar() {
             Login
           </button>
 
-          <button className="rounded-xl bg-[#E8732A] px-5 py-2.5 font-inter text-sm font-bold text-white shadow-[0_10px_24px_rgba(232,115,42,0.26)] transition duration-200 hover:scale-[1.03] hover:bg-[#D9651F]">
+          <button
+            onClick={() => router.push("/register")}
+            className="rounded-xl bg-[#E8732A] px-5 py-2.5 font-inter text-sm font-bold text-white shadow-[0_10px_24px_rgba(232,115,42,0.26)] transition duration-200 hover:scale-[1.03] hover:bg-[#D9651F]"
+          >
             Register Now
           </button>
           <TranslateSwitcher />
