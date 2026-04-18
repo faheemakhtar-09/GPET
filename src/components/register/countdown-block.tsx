@@ -8,11 +8,11 @@ export default function CountdownBlock({
   label: string;
 }) {
   return (
-    <div className="rounded-2xl bg-white px-4 py-5 text-center shadow-sm ring-1 ring-[#002366]/6">
-      <div className="font-montserrat text-3xl font-bold tracking-[-0.03em] text-[#002366]">
+    <div className="rounded-[22px] border border-[#e8732a]/12 bg-white p-5 text-center shadow-[0_12px_30px_rgba(232,115,42,0.06)]">
+      <div className="font-montserrat text-3xl font-bold tracking-[-0.04em] text-[#2f1608]">
         {value}
       </div>
-      <div className="mt-1 font-inter text-[11px] font-semibold uppercase tracking-[0.16em] text-[#002366]/45">
+      <div className="mt-2 font-inter text-xs font-semibold uppercase tracking-[0.16em] text-[#e8732a]">
         {label}
       </div>
     </div>

@@ -4,8 +4,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-white pt-32 pb-16 sm:pt-36 lg:pt-40">
-      {/* Background */}
+    <section className="relative overflow-hidden bg-white pt-[40px] pb-16 sm:pt-36 lg:pt-40">
       <div className="absolute inset-0 -z-10">
         <div className="absolute left-[-10%] top-20 h-72 w-72 rounded-full bg-[#244C9A]/[0.06] blur-3xl" />
         <div className="absolute right-[-5%] top-10 h-72 w-72 rounded-full bg-[#E8732A]/[0.10] blur-3xl" />
@@ -50,23 +49,95 @@ export default function HeroSection() {
               strokeWidth="1"
             />
 
-            <circle cx="120" cy="160" r="2.5" fill="#E8732A" fillOpacity="0.35" />
+            <circle
+              cx="120"
+              cy="160"
+              r="2.5"
+              fill="#E8732A"
+              fillOpacity="0.35"
+            />
             <circle cx="260" cy="210" r="2" fill="#244C9A" fillOpacity="0.28" />
-            <circle cx="420" cy="140" r="1.8" fill="#E8732A" fillOpacity="0.3" />
-            <circle cx="620" cy="300" r="2.2" fill="#244C9A" fillOpacity="0.26" />
-            <circle cx="760" cy="220" r="1.8" fill="#E8732A" fillOpacity="0.3" />
-            <circle cx="920" cy="180" r="2.4" fill="#244C9A" fillOpacity="0.24" />
+            <circle
+              cx="420"
+              cy="140"
+              r="1.8"
+              fill="#E8732A"
+              fillOpacity="0.3"
+            />
+            <circle
+              cx="620"
+              cy="300"
+              r="2.2"
+              fill="#244C9A"
+              fillOpacity="0.26"
+            />
+            <circle
+              cx="760"
+              cy="220"
+              r="1.8"
+              fill="#E8732A"
+              fillOpacity="0.3"
+            />
+            <circle
+              cx="920"
+              cy="180"
+              r="2.4"
+              fill="#244C9A"
+              fillOpacity="0.24"
+            />
             <circle cx="1080" cy="260" r="2" fill="#E8732A" fillOpacity="0.3" />
-            <circle cx="1260" cy="200" r="2.5" fill="#244C9A" fillOpacity="0.24" />
-            <circle cx="1340" cy="320" r="2.2" fill="#E8732A" fillOpacity="0.3" />
+            <circle
+              cx="1260"
+              cy="200"
+              r="2.5"
+              fill="#244C9A"
+              fillOpacity="0.24"
+            />
+            <circle
+              cx="1340"
+              cy="320"
+              r="2.2"
+              fill="#E8732A"
+              fillOpacity="0.3"
+            />
 
             <circle cx="180" cy="520" r="2" fill="#244C9A" fillOpacity="0.24" />
-            <circle cx="340" cy="560" r="2.4" fill="#E8732A" fillOpacity="0.28" />
-            <circle cx="540" cy="500" r="1.8" fill="#244C9A" fillOpacity="0.24" />
-            <circle cx="720" cy="620" r="2.3" fill="#E8732A" fillOpacity="0.3" />
+            <circle
+              cx="340"
+              cy="560"
+              r="2.4"
+              fill="#E8732A"
+              fillOpacity="0.28"
+            />
+            <circle
+              cx="540"
+              cy="500"
+              r="1.8"
+              fill="#244C9A"
+              fillOpacity="0.24"
+            />
+            <circle
+              cx="720"
+              cy="620"
+              r="2.3"
+              fill="#E8732A"
+              fillOpacity="0.3"
+            />
             <circle cx="920" cy="540" r="2" fill="#244C9A" fillOpacity="0.24" />
-            <circle cx="1120" cy="600" r="2.5" fill="#E8732A" fillOpacity="0.28" />
-            <circle cx="1300" cy="540" r="1.8" fill="#244C9A" fillOpacity="0.22" />
+            <circle
+              cx="1120"
+              cy="600"
+              r="2.5"
+              fill="#E8732A"
+              fillOpacity="0.28"
+            />
+            <circle
+              cx="1300"
+              cy="540"
+              r="1.8"
+              fill="#244C9A"
+              fillOpacity="0.22"
+            />
           </svg>
         </div>
       </div>
@@ -119,8 +190,9 @@ export default function HeroSection() {
           </p>
 
           <p className="mt-4 max-w-2xl font-inter text-sm leading-7 text-[#244C9A]/72 sm:text-base">
-            GPET 2026 is designed to help students across Uttar Pradesh access a credible,
-            scholarship-focused digital opportunity with a guided, mobile-first experience.
+            GPET 2026 is designed to help students across Uttar Pradesh access a
+            credible, scholarship-focused digital opportunity with a guided,
+            mobile-first experience.
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">

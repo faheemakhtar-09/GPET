@@ -6,13 +6,13 @@ import TestRoomPreviewSection from "@/features/home/components/TestRoomPreviewSe
 import RegistrationPreviewSection from "@/features/home/components/RegistrationPreviewSection";
 export default function Home() {
   return (
-    <main className="pt-20">
+    <>
       <HeroSection />
       <RewardsGallery />
       <TechTrustSection />
       <ProgressPipeline />
       <TestRoomPreviewSection />
-      <RegistrationPreviewSection />  
-    </main>
+      <RegistrationPreviewSection />
+    </>
   );
 }
