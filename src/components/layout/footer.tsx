@@ -136,7 +136,7 @@ export default function Footer() {
 
         <div className="flex flex-col gap-4 pt-6 text-sm text-[#2f1608]/60 sm:flex-row sm:items-center sm:justify-between">
           <p className="font-inter">
-            © 2026 GPET by Gradorra. All rights reserved.
+            © 2026 Gradorra Private Limited | All Rights Reserved.
           </p>
 
           <div className="flex flex-wrap items-center gap-5 font-inter">

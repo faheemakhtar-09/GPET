@@ -1,117 +1,28 @@
-type Lang = "en" | "hi";
-
-const copy = {
-  en: {
-    badge: "About Gradorra",
-    title: "Redefining Merit through Innovation",
-    subtitle:
-      "A technology-led education ecosystem built on Ethical AI, transparency, and student-first trust.",
-    orgTitle: "The Organization",
-    orgBody:
-      "Gradorra Private Limited is a premier technology firm working at the intersection of Ethical AI and Educational Innovation. Headquartered in Greater Noida West, we build future-ready ecosystems that raise education to global standards.",
-    trustTitle: "Data Sovereignty",
-    trustBody:
-      "We treat every student's data as an Amanat, or sacred trust, and we never monetize it. Transparency, security, and accessibility guide every product decision we make.",
-    missionTitle: "Our Mission",
-    missionBody:
-      "To create a deeply personalized and secure experience that helps students make informed decisions about their academic and career future.",
-    visionTitle: "Our Vision",
-    visionBody:
-      "To democratize access to high-quality education by giving every student a transparent, direct, and trusted pathway to opportunity.",
-    valuesTitle: "Our Values",
-    values: [
-      "Ethical AI with human accountability.",
-      "Student privacy and data sovereignty.",
-      "Transparency in every process.",
-      "Merit-based opportunity for all.",
-    ],
-    gpetTitle: "GPET 2026",
-    gpetBody:
-      "The Gradorra Pre-Eligibility Test is India’s first mobile AI-proctored scholarship initiative, designed to identify talent across 75 districts of Uttar Pradesh.",
-    gpetExtra:
-      "The model balances academic foundation with logical reasoning and rewards top performers with premium gadgets and scholarships.",
-    leaderTitle: "Leadership",
-    leaderName: "Mr. Faisal Khan",
-    leaderRole: "Founder & CEO, Gradorra Private Limited",
-    leaderBody:
-      "Mr. Faisal Khan is the visionary behind Gradorra and the Founder of KD Ventures Group. His mission is to bring quiet luxury and digital transparency into modern education.",
-    leaderVision:
-      "Under his leadership, Gradorra is building an ecosystem where resources never stand between a student and their dream.",
-    quote:
-      "Merit is the only currency of the future. At Gradorra, we are building the vaults to protect and grow it.",
-    quoteBy: "— Faisal Khan",
-    ctaTitle: "A Trusted Path Forward",
-    ctaBody:
-      "A student-first platform for admissions, scholarships, and future-ready educational access.",
-    ctaButton: "Explore GPET 2026",
-  },
-  hi: {
-    badge: "Gradorra के बारे में",
-    title: "नवाचार के माध्यम से योग्यता को नया रूप",
-    subtitle:
-      "Ethical AI, transparency, और student-first trust पर आधारित एक education ecosystem.",
-    orgTitle: "संगठन",
-    orgBody:
-      "Gradorra Private Limited एक प्रमुख टेक्नोलॉजी फर्म है जो Ethical AI और Educational Innovation के संगम पर काम करती है। Greater Noida West में स्थित, हम ऐसे future-ready ecosystems बनाते हैं जो शिक्षा को global standards तक ले जाते हैं।",
-    trustTitle: "डेटा संप्रभुता",
-    trustBody:
-      "हम हर student के data को Amanat, यानी sacred trust, मानते हैं और उसे कभी monetize नहीं करते। Transparency, security, और accessibility हमारे हर product decision का आधार हैं।",
-    missionTitle: "हमारा मिशन",
-    missionBody:
-      "एक सुरक्षित और personalized experience बनाना, जो students को उनके academic और career future के लिए informed decisions लेने में मदद करे।",
-    visionTitle: "हमारी दृष्टि",
-    visionBody:
-      "High-quality education को सभी के लिए accessible बनाना, ताकि हर student को opportunity तक एक transparent और trusted रास्ता मिले।",
-    valuesTitle: "हमारे मूल्य",
-    values: [
-      "Human accountability के साथ Ethical AI.",
-      "Student privacy और data sovereignty.",
-      "हर प्रक्रिया में transparency.",
-      "सभी के लिए merit-based opportunity.",
-    ],
-    gpetTitle: "GPET 2026",
-    gpetBody:
-      "Gradorra Pre-Eligibility Test भारत की पहली mobile AI-proctored scholarship initiative है, जिसे Uttar Pradesh के 75 districts की talent पहचानने के लिए बनाया गया है।",
-    gpetExtra:
-      "यह model academic foundation और logical reasoning का balance रखता है, और top performers को premium gadgets और scholarships से सम्मानित करता है।",
-    leaderTitle: "नेतृत्व",
-    leaderName: "Mr. Faisal Khan",
-    leaderRole: "Founder & CEO, Gradorra Private Limited",
-    leaderBody:
-      "Mr. Faisal Khan, Gradorra के vision के पीछे की प्रमुख शक्ति हैं और KD Ventures Group के Founder भी हैं। उनका मिशन modern education में quiet luxury और digital transparency लाना है।",
-    leaderVision:
-      "उनके नेतृत्व में, Gradorra ऐसा ecosystem बना रहा है जहाँ resources किसी student के सपने और लक्ष्य के बीच रुकावट न बनें।",
-    quote:
-      "Merit भविष्य की only currency है। Gradorra में हम इसे protect और grow करने के लिए vaults बना रहे हैं।",
-    quoteBy: "— Faisal Khan",
-    ctaTitle: "एक भरोसेमंद रास्ता",
-    ctaBody:
-      "Admissions, scholarships, और future-ready educational access के लिए student-first platform.",
-    ctaButton: "GPET 2026 देखें",
-  },
-};
-
-export default function AboutPage({ lang = "en" }: { lang?: Lang }) {
-  const t = copy[lang];
-
+export default function AboutUsPage() {
   return (
     <main className="bg-white text-[#2f1608]">
       <section className="relative overflow-hidden border-b border-[#e8732a]/10 bg-[linear-gradient(180deg,#fffaf7_0%,#ffffff_100%)]">
-        <div className="absolute inset-0 pointer-events-none">
+        <div className="pointer-events-none absolute inset-0">
           <div className="absolute left-[-8%] top-[-10%] h-80 w-80 rounded-full bg-[#e8732a]/8 blur-3xl" />
-          <div className="absolute right-[-10%] bottom-[-12%] h-96 w-96 rounded-full bg-[#e8732a]/6 blur-3xl" />
+          <div className="absolute right-[-10%] bottom-[-15%] h-96 w-96 rounded-full bg-[#e8732a]/6 blur-3xl" />
         </div>
 
         <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-24">
-          <div className="max-w-3xl">
+          <div className="max-w-4xl">
             <div className="inline-flex rounded-full border border-[#e8732a]/15 bg-[#fff4ed] px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-[#e8732a]">
-              {t.badge}
+              About Us
             </div>
-            <h1 className="mt-5 font-montserrat text-[clamp(2.4rem,6vw,4.8rem)] font-bold leading-[0.98] tracking-[-0.04em]">
-              {t.title}
+
+            <h1 className="mt-5 font-montserrat text-[clamp(2.5rem,6vw,5rem)] font-bold leading-[0.96] tracking-[-0.04em] text-[#2f1608]">
+              GRADORRA:
+              <span className="block text-[#e8732a]">
+                Redefining Merit through Innovation
+              </span>
             </h1>
-            <p className="mt-5 max-w-2xl font-inter text-base leading-8 text-[#2f1608]/72 sm:text-lg">
-              {t.subtitle}
+
+            <p className="mt-6 max-w-3xl font-inter text-base leading-8 text-[#2f1608]/72 sm:text-lg">
+              A future-ready education ecosystem built at the intersection of
+              Ethical AI, educational innovation, and secure digital trust. [web:320]
             </p>
           </div>
         </div>
@@ -120,114 +31,187 @@ export default function AboutPage({ lang = "en" }: { lang?: Lang }) {
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid gap-6 lg:grid-cols-12">
           <article className="rounded-[28px] border border-[#e8732a]/10 bg-[#fffaf7] p-6 shadow-[0_16px_40px_rgba(232,115,42,0.06)] lg:col-span-7">
-            <h2 className="font-montserrat text-2xl font-bold">{t.orgTitle}</h2>
+            <div className="inline-flex rounded-full border border-[#e8732a]/15 bg-white px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-[#e8732a]">
+              The Organization
+            </div>
+
+            <h2 className="mt-5 font-montserrat text-3xl font-bold tracking-[-0.03em] text-[#2f1608]">
+              Gradorra Private Limited
+            </h2>
+
             <p className="mt-4 font-inter text-sm leading-8 text-[#2f1608]/75">
-              {t.orgBody}
+              Gradorra Private Limited is a premier technology firm operating at
+              the intersection of Ethical AI and Educational Innovation.
+              Headquartered in Greater Noida West, we build future-ready
+              ecosystems that elevate education to global standards.
             </p>
 
-            <h3 className="mt-8 font-montserrat text-xl font-bold text-[#e8732a]">
-              {t.trustTitle}
-            </h3>
-            <p className="mt-3 font-inter text-sm leading-8 text-[#2f1608]/75">
-              {t.trustBody}
-            </p>
+            <div className="mt-8 rounded-[24px] border border-[#e8732a]/12 bg-white p-5">
+              <h3 className="font-montserrat text-xl font-bold text-[#e8732a]">
+                Data Sovereignty
+              </h3>
+              <p className="mt-3 font-inter text-sm leading-8 text-[#2f1608]/75">
+                Our core principle is Data Sovereignty. We treat every student’s
+                data as an "Amanat" (Sacred Trust), ensuring it is never
+                monetized or shared. Our mission is to make technology
+                transparent, secure, and accessible to everyone.
+              </p>
+            </div>
           </article>
 
           <aside className="rounded-[28px] border border-[#e8732a]/10 bg-white p-6 shadow-[0_16px_40px_rgba(232,115,42,0.05)] lg:col-span-5">
-            <h2 className="font-montserrat text-2xl font-bold">{t.valuesTitle}</h2>
-            <ul className="mt-5 space-y-3">
-              {t.values.map((item) => (
-                <li
-                  key={item}
-                  className="rounded-2xl border border-[#e8732a]/10 bg-[#fffaf7] px-4 py-4 font-inter text-sm leading-7 text-[#2f1608]/75"
-                >
-                  {item}
-                </li>
-              ))}
-            </ul>
+            <h2 className="font-montserrat text-2xl font-bold text-[#2f1608]">
+              What Defines Gradorra
+            </h2>
+
+            <div className="mt-5 space-y-4">
+              <div className="rounded-2xl border border-[#e8732a]/10 bg-[#fffaf7] p-4">
+                <p className="font-inter text-sm font-semibold text-[#e8732a]">
+                  Ethical AI
+                </p>
+                <p className="mt-2 font-inter text-sm leading-7 text-[#2f1608]/72">
+                  Technology that supports merit with transparency, fairness,
+                  and responsible digital systems.
+                </p>
+              </div>
+
+              <div className="rounded-2xl border border-[#e8732a]/10 bg-[#fffaf7] p-4">
+                <p className="font-inter text-sm font-semibold text-[#e8732a]">
+                  Student Trust
+                </p>
+                <p className="mt-2 font-inter text-sm leading-7 text-[#2f1608]/72">
+                  Every product experience is designed around security,
+                  accessibility, and long-term student value.
+                </p>
+              </div>
+
+              <div className="rounded-2xl border border-[#e8732a]/10 bg-[#fffaf7] p-4">
+                <p className="font-inter text-sm font-semibold text-[#e8732a]">
+                  Future-Ready Ecosystem
+                </p>
+                <p className="mt-2 font-inter text-sm leading-7 text-[#2f1608]/72">
+                  We aim to build digital education infrastructure that scales
+                  with opportunity and ambition.
+                </p>
+              </div>
+            </div>
           </aside>
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-4 pb-16 sm:px-6 lg:px-8">
-        <div className="grid gap-6 lg:grid-cols-3">
-          <article className="rounded-[28px] border border-[#e8732a]/10 bg-white p-6 shadow-[0_16px_40px_rgba(232,115,42,0.05)]">
-            <h2 className="font-montserrat text-2xl font-bold">{t.missionTitle}</h2>
-            <p className="mt-4 font-inter text-sm leading-8 text-[#2f1608]/75">
-              {t.missionBody}
-            </p>
-          </article>
+      <section className="border-y border-[#e8732a]/10 bg-[#fffaf7]">
+        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+          <div className="max-w-3xl">
+            <div className="inline-flex rounded-full border border-[#e8732a]/15 bg-white px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-[#e8732a]">
+              The Flagship: GPET 2026
+            </div>
 
-          <article className="rounded-[28px] border border-[#e8732a]/10 bg-white p-6 shadow-[0_16px_40px_rgba(232,115,42,0.05)]">
-            <h2 className="font-montserrat text-2xl font-bold">{t.visionTitle}</h2>
-            <p className="mt-4 font-inter text-sm leading-8 text-[#2f1608]/75">
-              {t.visionBody}
-            </p>
-          </article>
+            <h2 className="mt-5 font-montserrat text-[clamp(2rem,4vw,3.5rem)] font-bold leading-[1.02] tracking-[-0.03em] text-[#2f1608]">
+              India’s first Mobile AI-Proctored Scholarship Initiative
+            </h2>
 
-          <article className="rounded-[28px] border border-[#e8732a]/10 bg-white p-6 shadow-[0_16px_40px_rgba(232,115,42,0.05)]">
-            <h2 className="font-montserrat text-2xl font-bold">{t.gpetTitle}</h2>
-            <p className="mt-4 font-inter text-sm leading-8 text-[#2f1608]/75">
-              {t.gpetBody}
+            <p className="mt-5 max-w-3xl font-inter text-base leading-8 text-[#2f1608]/75">
+              The Gradorra Pre-Eligibility Test (GPET) is designed to identify
+              talent across all 75 districts of Uttar Pradesh and provide
+              students with a larger, more meaningful platform for recognition
+              and opportunity.
             </p>
-            <p className="mt-4 font-inter text-sm leading-8 text-[#2f1608]/75">
-              {t.gpetExtra}
-            </p>
-          </article>
+          </div>
+
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+            <div className="rounded-[24px] border border-[#e8732a]/10 bg-white p-6 shadow-[0_14px_34px_rgba(232,115,42,0.05)]">
+              <h3 className="font-montserrat text-xl font-bold text-[#2f1608]">
+                Assessment Model
+              </h3>
+              <p className="mt-4 font-inter text-sm leading-8 text-[#2f1608]/75">
+                A perfect balance of 50% NCERT (Academic Foundation) and 50%
+                Logical Reasoning (Problem Solving & IQ).
+              </p>
+            </div>
+
+            <div className="rounded-[24px] border border-[#e8732a]/10 bg-white p-6 shadow-[0_14px_34px_rgba(232,115,42,0.05)]">
+              <h3 className="font-montserrat text-xl font-bold text-[#2f1608]">
+                Merit Rewards
+              </h3>
+              <p className="mt-4 font-inter text-sm leading-8 text-[#2f1608]/75">
+                State, Zonal, and District toppers are honored with premium
+                gadgets including laptops, tablets, smartphones, smartwatches,
+                and higher education scholarships.
+              </p>
+            </div>
+
+            <div className="rounded-[24px] border border-[#e8732a]/10 bg-white p-6 shadow-[0_14px_34px_rgba(232,115,42,0.05)]">
+              <h3 className="font-montserrat text-xl font-bold text-[#2f1608]">
+                AI Analytics
+              </h3>
+              <p className="mt-4 font-inter text-sm leading-8 text-[#2f1608]/75">
+                Every student receives detailed percentile reports and AI-driven
+                career matching roadmaps based on individual performance.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section className="border-t border-[#e8732a]/10 bg-[#fffaf7]">
-        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-          <div className="grid gap-6 lg:grid-cols-12">
-            <article className="rounded-[28px] border border-[#e8732a]/10 bg-white p-6 shadow-[0_16px_40px_rgba(232,115,42,0.06)] lg:col-span-8">
-              <div className="inline-flex rounded-full border border-[#e8732a]/15 bg-[#fff4ed] px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-[#e8732a]">
-                {t.leaderTitle}
-              </div>
+      <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div className="grid gap-6 lg:grid-cols-12">
+          <article className="rounded-[28px] border border-[#e8732a]/10 bg-white p-6 shadow-[0_16px_40px_rgba(232,115,42,0.05)] lg:col-span-8">
+            <div className="inline-flex rounded-full border border-[#e8732a]/15 bg-[#fff4ed] px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-[#e8732a]">
+              Leadership
+            </div>
 
-              <h2 className="mt-4 font-montserrat text-2xl font-bold">{t.founder}</h2>
-              <p className="mt-1 font-inter text-sm font-medium text-[#e8732a]">
-                {t.founderRole}
-              </p>
+            <h2 className="mt-5 font-montserrat text-3xl font-bold tracking-[-0.03em] text-[#2f1608]">
+              Mr. Faisal Khan
+            </h2>
+            <p className="mt-2 font-inter text-sm font-semibold uppercase tracking-[0.14em] text-[#e8732a]">
+              Founder & CEO, Gradorra Private Limited
+            </p>
 
-              <p className="mt-5 font-inter text-sm leading-8 text-[#2f1608]/75">
-                {t.leaderBody}
-              </p>
-              <p className="mt-4 font-inter text-sm leading-8 text-[#2f1608]/75">
-                {t.leaderVision}
-              </p>
+            <p className="mt-5 font-inter text-sm leading-8 text-[#2f1608]/75">
+              Mr. Faisal Khan is the Founder and the driving force behind the KD
+              Ventures Group. As a visionary entrepreneur, his mission is to
+              integrate "Quiet Luxury" and "Digital Transparency" into the
+              traditional education system.
+            </p>
 
-              <blockquote className="mt-6 rounded-2xl border border-[#e8732a]/12 bg-[#fffaf7] p-5">
-                <p className="font-montserrat text-lg font-semibold leading-8">
-                  {t.quote}
-                </p>
-                <footer className="mt-3 font-inter text-sm font-medium text-[#e8732a]">
-                  {t.quoteBy}
-                </footer>
-              </blockquote>
-            </article>
+            <p className="mt-4 font-inter text-sm leading-8 text-[#2f1608]/75">
+              Under his leadership, Gradorra is moving toward an ecosystem where
+              a lack of resources will never stand in the way of one's dreams.
+              His vision is to take GPET to a Pan-India level by 2029 and
+              provide millions of students with a secure and bright digital
+              future.
+            </p>
 
-            <aside className="rounded-[28px] border border-[#e8732a]/10 bg-white p-6 shadow-[0_16px_40px_rgba(232,115,42,0.05)] lg:col-span-4">
-              <h2 className="font-montserrat text-2xl font-bold">{t.ctaTitle}</h2>
-              <p className="mt-4 font-inter text-sm leading-8 text-[#2f1608]/75">
-                {t.ctaBody}
+            <blockquote className="mt-6 rounded-[24px] border border-[#e8732a]/12 bg-[#fffaf7] p-6">
+              <p className="font-montserrat text-xl font-semibold leading-8 text-[#2f1608]">
+                “Merit is the only currency of the future. At Gradorra, we are
+                building the vaults to protect and grow it.”
               </p>
+              <footer className="mt-3 font-inter text-sm font-medium text-[#e8732a]">
+                — Faisal Khan
+              </footer>
+            </blockquote>
+          </article>
 
-              <a
-                href="/gpet-2026"
-                className="mt-8 inline-flex items-center justify-center rounded-xl bg-[#e8732a] px-6 py-3 font-inter text-sm font-semibold text-white shadow-[0_12px_24px_rgba(232,115,42,0.18)] transition hover:-translate-y-0.5 hover:opacity-95"
-              >
-                {t.ctaButton}
-              </a>
+          <aside className="rounded-[28px] border border-[#e8732a]/10 bg-[#fffaf7] p-6 shadow-[0_16px_40px_rgba(232,115,42,0.05)] lg:col-span-4">
+            <h3 className="font-montserrat text-2xl font-bold tracking-[-0.03em] text-[#2f1608]">
+              Building trust at scale
+            </h3>
 
-              <p className="mt-6 font-inter text-sm text-[#2f1608]/60">
-                {t.initiative}
+            <p className="mt-4 font-inter text-sm leading-8 text-[#2f1608]/75">
+              Gradorra combines technology, merit, and secure digital systems to
+              create a student-first ecosystem designed for long-term impact. [web:320]
+            </p>
+
+            <div className="mt-6 rounded-2xl border border-[#e8732a]/12 bg-white p-4">
+              <p className="font-inter text-sm font-medium text-[#2f1608]">
+                An initiative by Faisal Khan.
               </p>
-              <p className="mt-2 font-inter text-sm text-[#2f1608]/60">
-                {t.rights}
+              <p className="mt-2 font-inter text-sm text-[#2f1608]/65">
+                © 2026 Gradorra Private Limited | All Rights Reserved.
               </p>
-            </aside>
-          </div>
+            </div>
+          </aside>
         </div>
       </section>
     </main>
