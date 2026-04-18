@@ -8,6 +8,7 @@ const quickLinks = [
   { label: "Scholarships", href: "/scholarship" },
   { label: "Eligibility", href: "/eligibility" },
   { label: "Partners", href: "/partners" },
+  { label: "Our Mission Partners", href: "our-mission-partners" },
 ];
 
 export default function Footer() {
@@ -44,9 +45,9 @@ export default function Footer() {
             </Link>
 
             <p className="mt-6 max-w-md font-inter text-sm leading-7 text-[#2f1608]/70">
-              A scholarship and merit-driven digital initiative designed to guide
-              students across Uttar Pradesh through a trusted, accessible, and
-              mobile-first eligibility journey.
+              A scholarship and merit-driven digital initiative designed to
+              guide students across Uttar Pradesh through a trusted, accessible,
+              and mobile-first eligibility journey.
             </p>
 
             <div className="mt-6 inline-flex items-center rounded-full border border-[#e8732a]/15 bg-[#fff4ed] px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.2em] text-[#e8732a]">
@@ -143,7 +144,10 @@ export default function Footer() {
             {/* <Link href="#" className="transition hover:text-[#e8732a]">
               Privacy Policy
             </Link> */}
-            <Link href="/terms-and-conditions" className="transition hover:text-[#e8732a]">
+            <Link
+              href="/terms-and-conditions"
+              className="transition hover:text-[#e8732a]"
+            >
               Terms & Conditions
             </Link>
             {/* <Link href="#" className="transition hover:text-[#e8732a]">
