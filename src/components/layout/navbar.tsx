@@ -10,7 +10,7 @@ import TranslateSwitcher from "../common/translate-switcher";
 const navItems = [
   { label: "Home", href: "/" },
   { label: "About GPET", href: "/about" },
-  { label: "Rewards 30K", href: "/rewards" },
+  { label: "Rewards 30K", href: "/rewards-30k" },
   { label: "Eligibility", href: "/eligibility" },
   { label: "Partners", href: "/partners" },
 ];
