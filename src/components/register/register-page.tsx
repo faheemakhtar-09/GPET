@@ -30,7 +30,7 @@ export default function RegisterPageView() {
     }));
   };
 
-  const markTouched = (fields: (keyof FormData)[]) => {
+  const markTouched = (fields: readonly (keyof FormData)[]) => {
     setTouched((prev) => {
       const next = { ...prev };
       fields.forEach((field) => {
@@ -41,7 +41,7 @@ export default function RegisterPageView() {
   };
 
   const handleNext = () => {
-    const currentFields = stepFields[step] as (keyof FormData)[];
+    const currentFields = stepFields[step];
     markTouched(currentFields);
 
     const currentStepErrors = getStepErrors(step, form);
