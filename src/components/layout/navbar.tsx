@@ -11,7 +11,7 @@ import { useRouter } from "next/navigation";
 const navItems = [
   { label: "Home", href: "/" },
   { label: "About GPET", href: "/about" },
-  { label: "Rewards 30K", href: "/rewards" },
+  { label: "Scholarships", href: "/scholarship" },
   { label: "Eligibility", href: "/eligibility" },
   { label: "Partners", href: "/partners" },
 ];

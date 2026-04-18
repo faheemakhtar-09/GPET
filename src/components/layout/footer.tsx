@@ -3,11 +3,11 @@ import Link from "next/link";
 import { ChevronRight, Mail, Phone, MapPin } from "lucide-react";
 
 const quickLinks = [
-  { label: "Home", href: "#" },
-  { label: "About GPET", href: "#" },
-  { label: "Rewards 30K", href: "#" },
-  { label: "Eligibility", href: "#" },
-  { label: "Partners", href: "#" },
+  { label: "Home", href: "/" },
+  { label: "About GPET", href: "/about" },
+  { label: "Scholarships", href: "/scholarship" },
+  { label: "Eligibility", href: "/eligibility" },
+  { label: "Partners", href: "/partners" },
 ];
 
 export default function Footer() {
@@ -140,15 +140,15 @@ export default function Footer() {
           </p>
 
           <div className="flex flex-wrap items-center gap-5 font-inter">
-            <Link href="#" className="transition hover:text-[#e8732a]">
+            {/* <Link href="#" className="transition hover:text-[#e8732a]">
               Privacy Policy
-            </Link>
-            <Link href="#" className="transition hover:text-[#e8732a]">
+            </Link> */}
+            <Link href="/terms-and-conditions" className="transition hover:text-[#e8732a]">
               Terms & Conditions
             </Link>
-            <Link href="#" className="transition hover:text-[#e8732a]">
+            {/* <Link href="#" className="transition hover:text-[#e8732a]">
               Help Center
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

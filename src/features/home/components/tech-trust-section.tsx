@@ -20,7 +20,7 @@ const trustItems = [
   {
     id: "command",
     label: "Operational Oversight",
-    title: "1000+ Commando Monitors",
+    title: "1000+ Commando live Monitors",
     description:
       "Human-backed supervision presented with institutional authority and strong on-ground monitoring assurance.",
     type: "grid",

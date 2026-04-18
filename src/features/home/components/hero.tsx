@@ -178,23 +178,23 @@ export default function HeroSection() {
               className="h-8 w-auto object-contain sm:h-10"
             />
           </div>
-
           <h1 className="mt-8 max-w-4xl font-montserrat text-4xl font-bold leading-[1.05] tracking-[-0.04em] text-[#244C9A] sm:text-5xl lg:text-6xl">
             <span className="bg-gradient-to-r from-[#244C9A] via-[#365fbc] to-[#E8732A] bg-clip-text text-transparent">
               उत्तर प्रदेश का सबसे बड़ा डिजिटल मेधा चयन महा-अभियान
             </span>
           </h1>
-
-          <p className="mt-6 max-w-2xl font-montserrat text-base font-medium text-[#244C9A]/80 sm:text-lg">
-            20,00,000+ Students | 30,000+ Rewards
+          <p className="mt-5 max-w-2xl font-montserrat text-lg font-semibold text-[#E8732A] sm:text-xl">
+            For Students of Class 8, 9, 10 & 12
           </p>
-
+          <p className="mt-3 max-w-2xl font-montserrat text-base font-medium text-[#244C9A]/80 sm:text-lg">
+            Targeted Students 20,00,000+ | Upto 30,000+ Rewards
+          </p>
           <p className="mt-4 max-w-2xl font-inter text-sm leading-7 text-[#244C9A]/72 sm:text-base">
-            GPET 2026 is designed to help students across Uttar Pradesh access a
-            credible, scholarship-focused digital opportunity with a guided,
-            mobile-first experience.
-          </p>
-
+            GPET 2026 is designed to help eligible students from Classes 8, 9,
+            10, and 12 across Uttar Pradesh access a credible,
+            scholarship-focused digital opportunity with a guided, mobile-first
+            experience.
+          </p>{" "}
           <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
             <button
               onClick={() =>

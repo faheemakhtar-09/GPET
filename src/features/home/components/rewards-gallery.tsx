@@ -22,10 +22,10 @@ const rewards = [
   },
   {
     title: "Merit Incentives",
-    count: "30,000+ Rewards",
+    count: "Upto 30,000+ Rewards",
     icon: Trophy,
     desc: "Recognition and rewards designed to motivate students at district, zonal, and state levels.",
-    points: ["लैपटॉप / टैबलेट / स्मार्टफोन", "30,000+ पुरस्कार"],
+    points: ["लैपटॉप / टैबलेट / स्मार्टफोन / छात्रवृत्ति / स्टडी किट्स", "30,000+ पुरस्कार"],
   },
 ];
 
@@ -44,7 +44,7 @@ export default function RewardsGallery() {
           </span>
 
           <h2 className="mt-5 font-montserrat text-3xl font-bold tracking-[-0.03em] text-[#244C9A] sm:text-4xl lg:text-5xl">
-            30,000+ Rewards Across Every Level
+            Upto 30,000+ Rewards Across Every Level
           </h2>
 
           <p className="mx-auto mt-4 max-w-2xl font-inter text-sm leading-7 text-[#244C9A]/70 sm:text-base">
