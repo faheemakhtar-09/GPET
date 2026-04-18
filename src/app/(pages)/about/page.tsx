@@ -1,365 +1,217 @@
-import Link from "next/link";
-import {
-  ArrowRight,
-  ShieldCheck,
-  GraduationCap,
-  Smartphone,
-  Trophy,
-  Users,
-  Target,
-  Sparkles,
-} from "lucide-react";
-
-const values = [
-  {
-    icon: Users,
-    title: "Access for All",
-    desc: "GPET is designed to support broad student participation with a clear, accessible, and easy-to-use digital journey.",
-  },
-  {
-    icon: Trophy,
-    title: "Merit with Meaning",
-    desc: "The platform is built to recognize effort, encourage excellence, and create structured visibility for student achievement.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Trust by Design",
-    desc: "Every experience is shaped around clarity, credibility, and a secure digital environment that students and families can trust.",
-  },
-  {
-    icon: Smartphone,
-    title: "Mobile First",
-    desc: "With a large share of users expected on budget smartphones, the platform experience is intentionally optimized for smaller screens.",
-  },
-];
-
-const highlights = [
-  {
-    value: "20 Lakh+",
-    label: "Target student reach",
-  },
-  {
-    value: "30,000",
-    label: "Reward-led narrative",
-  },
-  {
-    value: "Mobile First",
-    label: "Built for budget devices",
-  },
-  {
-    value: "Uttar Pradesh",
-    label: "State-wide student focus",
-  },
-];
-
-const commitments = [
-  "A guided and student-friendly registration experience.",
-  "Clear eligibility journeys with less confusion and more confidence.",
-  "A structured dashboard and assessment flow built for trust.",
-  "A digital-first system that supports accessibility at scale.",
-];
-
-export default function AboutPage() {
+export default function AboutUsPage() {
   return (
-    <main className="bg-[#F8F6F2] text-[#2B211C]">
-      {/* Hero */}
-      <section className="relative overflow-hidden">
+    <main className="bg-white text-[#2f1608]">
+      <section className="relative overflow-hidden border-b border-[#e8732a]/10 bg-[linear-gradient(180deg,#fffaf7_0%,#ffffff_100%)]">
         <div className="pointer-events-none absolute inset-0">
-          <div className="absolute left-[-8%] top-10 h-72 w-72 rounded-full bg-[#E8B15A]/10 blur-3xl" />
-          <div className="absolute right-[-6%] top-0 h-80 w-80 rounded-full bg-[#D99032]/10 blur-3xl" />
+          <div className="absolute left-[-8%] top-[-10%] h-80 w-80 rounded-full bg-[#e8732a]/8 blur-3xl" />
+          <div className="absolute right-[-10%] bottom-[-15%] h-96 w-96 rounded-full bg-[#e8732a]/6 blur-3xl" />
         </div>
 
-        <div className="relative mx-auto max-w-7xl px-4 pb-14 pt-16 sm:px-6 lg:px-8 lg:pb-20 lg:pt-20">
-          <div className="max-w-3xl">
-            <div className="inline-flex items-center rounded-full border border-[#F0D9B2] bg-[#FFF3DF] px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.2em] text-[#B87422]">
-              About GPET
+        <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-24">
+          <div className="max-w-4xl">
+            <div className="inline-flex rounded-full border border-[#e8732a]/15 bg-[#fff4ed] px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-[#e8732a]">
+              About Us
             </div>
 
-            <h1 className="mt-6 font-montserrat text-4xl font-bold tracking-[-0.04em] text-[#2B211C] sm:text-5xl lg:text-6xl">
-              Building Access, Rewarding Merit, and Guiding Students Forward
+            <h1 className="mt-5 font-montserrat text-[clamp(2.5rem,6vw,5rem)] font-bold leading-[0.96] tracking-[-0.04em] text-[#2f1608]">
+              GRADORRA:
+              <span className="block text-[#e8732a]">
+                Redefining Merit through Innovation
+              </span>
             </h1>
 
-            <p className="mt-6 max-w-2xl font-inter text-base leading-8 text-[#6C5648] sm:text-lg">
-              The Gradorra Pre-Eligibility Test (GPET) is a scholarship and
-              merit-focused digital initiative designed to help students move
-              ahead with clarity, confidence, and opportunity. Built for scale,
-              accessibility, and trust, GPET creates a guided experience for
-              students across Uttar Pradesh through a structured, mobile-first,
-              and recognition-driven journey.
+            <p className="mt-6 max-w-3xl font-inter text-base leading-8 text-[#2f1608]/72 sm:text-lg">
+              A future-ready education ecosystem built at the intersection of
+              Ethical AI, educational innovation, and secure digital trust. [web:320]
             </p>
-
-            <div className="mt-8 flex flex-wrap items-center gap-4">
-              <Link
-                href="#"
-                className="inline-flex items-center gap-2 rounded-2xl bg-[#D99032] px-6 py-3 font-inter text-sm font-semibold text-white shadow-[0_14px_30px_rgba(217,144,50,0.25)] transition hover:-translate-y-0.5 hover:bg-[#C97B23]"
-              >
-                Register Now
-                <ArrowRight className="h-4 w-4" />
-              </Link>
-
-              <Link
-                href="#"
-                className="inline-flex items-center gap-2 rounded-2xl border border-[#EADFD1] bg-white px-6 py-3 font-inter text-sm font-semibold text-[#7A5B45] transition hover:border-[#D99032]/40 hover:text-[#C97B23]"
-              >
-                Explore Eligibility
-              </Link>
-            </div>
           </div>
         </div>
       </section>
 
-      {/* Intro */}
-      <section className="pb-6">
-        <div className="mx-auto grid max-w-7xl gap-6 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
-          <div className="rounded-[28px] border border-[#EADFD1] bg-white p-7 shadow-[0_18px_40px_rgba(90,63,34,0.05)] sm:p-8">
-            <div className="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-[#FFF1DA] text-[#D99032]">
-              <GraduationCap className="h-7 w-7" />
+      <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div className="grid gap-6 lg:grid-cols-12">
+          <article className="rounded-[28px] border border-[#e8732a]/10 bg-[#fffaf7] p-6 shadow-[0_16px_40px_rgba(232,115,42,0.06)] lg:col-span-7">
+            <div className="inline-flex rounded-full border border-[#e8732a]/15 bg-white px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-[#e8732a]">
+              The Organization
             </div>
-            <h2 className="font-montserrat text-2xl font-bold tracking-[-0.03em] text-[#2B211C]">
-              Who We Are
+
+            <h2 className="mt-5 font-montserrat text-3xl font-bold tracking-[-0.03em] text-[#2f1608]">
+              Gradorra Private Limited
             </h2>
-            <p className="mt-4 font-inter text-[15px] leading-8 text-[#6C5648]">
-              GPET is a student-focused initiative by Gradorra that combines
-              merit recognition, digital accessibility, and a guided academic
-              journey in one unified platform. It has been envisioned to support
-              a large and diverse audience of students with a process that feels
-              structured, approachable, and trustworthy.
+
+            <p className="mt-4 font-inter text-sm leading-8 text-[#2f1608]/75">
+              Gradorra Private Limited is a premier technology firm operating at
+              the intersection of Ethical AI and Educational Innovation.
+              Headquartered in Greater Noida West, we build future-ready
+              ecosystems that elevate education to global standards.
             </p>
-            <p className="mt-4 font-inter text-[15px] leading-8 text-[#6C5648]">
-              Our goal is not just to create reach, but to build confidence.
-              Every step of the platform is designed to reduce confusion,
-              support mobile users, and help students move from awareness to
-              participation with clarity.
-            </p>
-          </div>
 
-          <div className="rounded-[28px] border border-[#EADFD1] bg-[linear-gradient(180deg,#FFFDFB_0%,#F9F4EC_100%)] p-7 shadow-[0_18px_40px_rgba(90,63,34,0.05)] sm:p-8">
-            <div className="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-[#FFF1DA] text-[#D99032]">
-              <Target className="h-7 w-7" />
-            </div>
-            <h2 className="font-montserrat text-2xl font-bold tracking-[-0.03em] text-[#2B211C]">
-              Our Mission
-            </h2>
-            <p className="mt-4 font-inter text-[15px] leading-8 text-[#6C5648]">
-              Our mission is to create a more accessible, transparent, and
-              student-friendly path for merit-based opportunity. GPET is built
-              to help students from different backgrounds understand the
-              journey, prepare with confidence, and participate in a digital
-              environment grounded in fairness and credibility.
-            </p>
-            <div className="mt-6 rounded-2xl border border-[#F0D9B2] bg-[#FFF4E3] p-5">
-              <p className="font-inter text-sm leading-7 text-[#8A6238]">
-                We believe opportunity should feel understandable, merit should
-                feel visible, and digital systems should feel trustworthy from
-                the first interaction.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Values */}
-      <section className="py-10 lg:py-14">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="max-w-2xl">
-            <p className="font-inter text-sm font-semibold uppercase tracking-[0.18em] text-[#C8842C]">
-              What GPET Stands For
-            </p>
-            <h2 className="mt-3 font-montserrat text-3xl font-bold tracking-[-0.03em] text-[#2B211C]">
-              A student-first system built on clarity, merit, and trust
-            </h2>
-          </div>
-
-          <div className="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            {values.map((item, index) => {
-              const Icon = item.icon;
-
-              return (
-                <div
-                  key={index}
-                  className="group rounded-[26px] border border-[#EADFD1] bg-white p-[1px] shadow-[0_18px_40px_rgba(90,63,34,0.05)] transition duration-300 hover:-translate-y-1.5"
-                >
-                  <div className="h-full rounded-[25px] bg-[linear-gradient(180deg,#ffffff_0%,#fdf8f1_100%)] p-6">
-                    <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#FFF1DA] text-[#D99032] shadow-sm">
-                      <Icon className="h-6 w-6" />
-                    </div>
-
-                    <h3 className="mt-6 font-montserrat text-xl font-bold tracking-[-0.02em] text-[#2B211C]">
-                      {item.title}
-                    </h3>
-
-                    <p className="mt-3 font-inter text-sm leading-7 text-[#6C5648]">
-                      {item.desc}
-                    </p>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* Why it matters */}
-      <section className="pb-10 lg:pb-14">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
-            <div className="rounded-[28px] border border-[#EADFD1] bg-white p-7 shadow-[0_18px_40px_rgba(90,63,34,0.05)] sm:p-8">
-              <p className="font-inter text-sm font-semibold uppercase tracking-[0.18em] text-[#C8842C]">
-                Why GPET Matters
-              </p>
-              <h2 className="mt-3 font-montserrat text-3xl font-bold tracking-[-0.03em] text-[#2B211C]">
-                Reducing confusion and making opportunity easier to approach
-              </h2>
-
-              <p className="mt-5 font-inter text-[15px] leading-8 text-[#6C5648]">
-                Many students face uncertainty while trying to understand
-                opportunities, eligibility conditions, and digital academic
-                processes. GPET aims to reduce that complexity by creating a
-                journey that is easier to navigate, easier to trust, and easier
-                to complete.
-              </p>
-
-              <p className="mt-4 font-inter text-[15px] leading-8 text-[#6C5648]">
-                By combining digital reach with clear guidance, GPET helps
-                students spend less time dealing with process confusion and more
-                time focusing on preparation, participation, and progress.
-              </p>
-            </div>
-
-            <div className="rounded-[28px] border border-[#EADFD1] bg-[linear-gradient(180deg,#FFFDFB_0%,#F9F4EC_100%)] p-7 shadow-[0_18px_40px_rgba(90,63,34,0.05)] sm:p-8">
-              <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#FFF1DA] text-[#D99032]">
-                <Sparkles className="h-7 w-7" />
-              </div>
-              <h3 className="mt-6 font-montserrat text-2xl font-bold tracking-[-0.03em] text-[#2B211C]">
-                Our Student Commitment
+            <div className="mt-8 rounded-[24px] border border-[#e8732a]/12 bg-white p-5">
+              <h3 className="font-montserrat text-xl font-bold text-[#e8732a]">
+                Data Sovereignty
               </h3>
-
-              <ul className="mt-5 space-y-4">
-                {commitments.map((item) => (
-                  <li key={item} className="flex items-start gap-3">
-                    <span className="mt-2 h-2.5 w-2.5 rounded-full bg-[#D99032]" />
-                    <p className="font-inter text-sm leading-7 text-[#6C5648]">
-                      {item}
-                    </p>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Stats */}
-      <section className="pb-10 lg:pb-14">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="rounded-[30px] border border-[#EADFD1] bg-[#FFFDF9] p-6 shadow-[0_20px_45px_rgba(90,63,34,0.05)] sm:p-8 lg:p-10">
-            <div className="max-w-2xl">
-              <p className="font-inter text-sm font-semibold uppercase tracking-[0.18em] text-[#C8842C]">
-                Built for Scale
-              </p>
-              <h2 className="mt-3 font-montserrat text-3xl font-bold tracking-[-0.03em] text-[#2B211C]">
-                Designed to serve a large student audience with confidence
-              </h2>
-              <p className="mt-4 font-inter text-[15px] leading-8 text-[#6C5648]">
-                GPET has been envisioned as a large-scale digital initiative for
-                students across Uttar Pradesh, with a strong focus on
-                accessibility, performance, and mobile-first participation.
+              <p className="mt-3 font-inter text-sm leading-8 text-[#2f1608]/75">
+                Our core principle is Data Sovereignty. We treat every student’s
+                data as an "Amanat" (Sacred Trust), ensuring it is never
+                monetized or shared. Our mission is to make technology
+                transparent, secure, and accessible to everyone.
               </p>
             </div>
+          </article>
 
-            <div className="mt-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
-              {highlights.map((item) => (
-                <div
-                  key={item.label}
-                  className="rounded-[24px] border border-[#F0E4D5] bg-white p-6"
-                >
-                  <p className="font-montserrat text-3xl font-bold tracking-[-0.04em] text-[#C97B23]">
-                    {item.value}
-                  </p>
-                  <p className="mt-2 font-inter text-sm text-[#6C5648]">
-                    {item.label}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Technology & trust */}
-      <section className="pb-10 lg:pb-14">
-        <div className="mx-auto grid max-w-7xl gap-6 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
-          <div className="rounded-[28px] border border-[#EADFD1] bg-white p-7 shadow-[0_18px_40px_rgba(90,63,34,0.05)] sm:p-8">
-            <h2 className="font-montserrat text-2xl font-bold tracking-[-0.03em] text-[#2B211C]">
-              Technology with Trust
+          <aside className="rounded-[28px] border border-[#e8732a]/10 bg-white p-6 shadow-[0_16px_40px_rgba(232,115,42,0.05)] lg:col-span-5">
+            <h2 className="font-montserrat text-2xl font-bold text-[#2f1608]">
+              What Defines Gradorra
             </h2>
-            <p className="mt-4 font-inter text-[15px] leading-8 text-[#6C5648]">
-              GPET is not only about access. It is also about accountability,
-              reliability, and confidence in the student experience. The
-              platform is designed to communicate trust through structured
-              digital flows, guided progress, and secure interaction patterns.
-            </p>
-            <p className="mt-4 font-inter text-[15px] leading-8 text-[#6C5648]">
-              From registration and dashboard states to assessment experiences,
-              every interface decision is intended to support clarity and
-              credibility across the journey.
-            </p>
-          </div>
 
-          <div className="rounded-[28px] border border-[#EADFD1] bg-[linear-gradient(180deg,#FFFDFB_0%,#F9F4EC_100%)] p-7 shadow-[0_18px_40px_rgba(90,63,34,0.05)] sm:p-8">
-            <h2 className="font-montserrat text-2xl font-bold tracking-[-0.03em] text-[#2B211C]">
-              Looking Ahead
-            </h2>
-            <p className="mt-4 font-inter text-[15px] leading-8 text-[#6C5648]">
-              We envision GPET as more than a test interface. We see it as a
-              trusted student platform that encourages aspiration, rewards
-              effort, and helps learners take their next step with greater
-              confidence.
-            </p>
-            <p className="mt-4 font-inter text-[15px] leading-8 text-[#6C5648]">
-              Our long-term vision is to make merit-oriented digital experiences
-              more understandable, more accessible, and more student-centered at
-              scale.
-            </p>
-          </div>
-        </div>
-      </section>
+            <div className="mt-5 space-y-4">
+              <div className="rounded-2xl border border-[#e8732a]/10 bg-[#fffaf7] p-4">
+                <p className="font-inter text-sm font-semibold text-[#e8732a]">
+                  Ethical AI
+                </p>
+                <p className="mt-2 font-inter text-sm leading-7 text-[#2f1608]/72">
+                  Technology that supports merit with transparency, fairness,
+                  and responsible digital systems.
+                </p>
+              </div>
 
-      {/* CTA */}
-      <section className="pb-16 pt-2 lg:pb-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="overflow-hidden rounded-[32px] border border-[#EADFD1] bg-[linear-gradient(135deg,#FFF8EF_0%,#FFFDFB_60%,#F8EFE1_100%)] p-8 shadow-[0_24px_60px_rgba(90,63,34,0.06)] sm:p-10 lg:p-12">
-            <div className="max-w-3xl">
-              <p className="font-inter text-sm font-semibold uppercase tracking-[0.18em] text-[#C8842C]">
-                Take the Next Step
-              </p>
-              <h2 className="mt-3 font-montserrat text-3xl font-bold tracking-[-0.03em] text-[#2B211C] sm:text-4xl">
-                Move forward with clarity, trust, and purpose
-              </h2>
-              <p className="mt-4 font-inter text-[15px] leading-8 text-[#6C5648] sm:text-base">
-                Whether you are exploring eligibility, preparing to register, or
-                learning more about the initiative, GPET is designed to help you
-                move forward with confidence.
-              </p>
+              <div className="rounded-2xl border border-[#e8732a]/10 bg-[#fffaf7] p-4">
+                <p className="font-inter text-sm font-semibold text-[#e8732a]">
+                  Student Trust
+                </p>
+                <p className="mt-2 font-inter text-sm leading-7 text-[#2f1608]/72">
+                  Every product experience is designed around security,
+                  accessibility, and long-term student value.
+                </p>
+              </div>
 
-              <div className="mt-8 flex flex-wrap items-center gap-4">
-                <Link
-                  href="#"
-                  className="inline-flex items-center gap-2 rounded-2xl bg-[#D99032] px-6 py-3 font-inter text-sm font-semibold text-white shadow-[0_14px_30px_rgba(217,144,50,0.25)] transition hover:-translate-y-0.5 hover:bg-[#C97B23]"
-                >
-                  Register Now
-                  <ArrowRight className="h-4 w-4" />
-                </Link>
-
-                <Link
-                  href="#"
-                  className="inline-flex items-center gap-2 rounded-2xl border border-[#EADFD1] bg-white px-6 py-3 font-inter text-sm font-semibold text-[#7A5B45] transition hover:border-[#D99032]/40 hover:text-[#C97B23]"
-                >
-                  Check Eligibility
-                </Link>
+              <div className="rounded-2xl border border-[#e8732a]/10 bg-[#fffaf7] p-4">
+                <p className="font-inter text-sm font-semibold text-[#e8732a]">
+                  Future-Ready Ecosystem
+                </p>
+                <p className="mt-2 font-inter text-sm leading-7 text-[#2f1608]/72">
+                  We aim to build digital education infrastructure that scales
+                  with opportunity and ambition.
+                </p>
               </div>
             </div>
+          </aside>
+        </div>
+      </section>
+
+      <section className="border-y border-[#e8732a]/10 bg-[#fffaf7]">
+        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+          <div className="max-w-3xl">
+            <div className="inline-flex rounded-full border border-[#e8732a]/15 bg-white px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-[#e8732a]">
+              The Flagship: GPET 2026
+            </div>
+
+            <h2 className="mt-5 font-montserrat text-[clamp(2rem,4vw,3.5rem)] font-bold leading-[1.02] tracking-[-0.03em] text-[#2f1608]">
+              India’s first Mobile AI-Proctored Scholarship Initiative
+            </h2>
+
+            <p className="mt-5 max-w-3xl font-inter text-base leading-8 text-[#2f1608]/75">
+              The Gradorra Pre-Eligibility Test (GPET) is designed to identify
+              talent across all 75 districts of Uttar Pradesh and provide
+              students with a larger, more meaningful platform for recognition
+              and opportunity.
+            </p>
           </div>
+
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+            <div className="rounded-[24px] border border-[#e8732a]/10 bg-white p-6 shadow-[0_14px_34px_rgba(232,115,42,0.05)]">
+              <h3 className="font-montserrat text-xl font-bold text-[#2f1608]">
+                Assessment Model
+              </h3>
+              <p className="mt-4 font-inter text-sm leading-8 text-[#2f1608]/75">
+                A perfect balance of 50% NCERT (Academic Foundation) and 50%
+                Logical Reasoning (Problem Solving & IQ).
+              </p>
+            </div>
+
+            <div className="rounded-[24px] border border-[#e8732a]/10 bg-white p-6 shadow-[0_14px_34px_rgba(232,115,42,0.05)]">
+              <h3 className="font-montserrat text-xl font-bold text-[#2f1608]">
+                Merit Rewards
+              </h3>
+              <p className="mt-4 font-inter text-sm leading-8 text-[#2f1608]/75">
+                State, Zonal, and District toppers are honored with premium
+                gadgets including laptops, tablets, smartphones, smartwatches,
+                and higher education scholarships.
+              </p>
+            </div>
+
+            <div className="rounded-[24px] border border-[#e8732a]/10 bg-white p-6 shadow-[0_14px_34px_rgba(232,115,42,0.05)]">
+              <h3 className="font-montserrat text-xl font-bold text-[#2f1608]">
+                AI Analytics
+              </h3>
+              <p className="mt-4 font-inter text-sm leading-8 text-[#2f1608]/75">
+                Every student receives detailed percentile reports and AI-driven
+                career matching roadmaps based on individual performance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div className="grid gap-6 lg:grid-cols-12">
+          <article className="rounded-[28px] border border-[#e8732a]/10 bg-white p-6 shadow-[0_16px_40px_rgba(232,115,42,0.05)] lg:col-span-8">
+            <div className="inline-flex rounded-full border border-[#e8732a]/15 bg-[#fff4ed] px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-[#e8732a]">
+              Leadership
+            </div>
+
+            <h2 className="mt-5 font-montserrat text-3xl font-bold tracking-[-0.03em] text-[#2f1608]">
+              Mr. Faisal Khan
+            </h2>
+            <p className="mt-2 font-inter text-sm font-semibold uppercase tracking-[0.14em] text-[#e8732a]">
+              Founder & CEO, Gradorra Private Limited
+            </p>
+
+            <p className="mt-5 font-inter text-sm leading-8 text-[#2f1608]/75">
+              Mr. Faisal Khan is the Founder and the driving force behind the KD
+              Ventures Group. As a visionary entrepreneur, his mission is to
+              integrate "Quiet Luxury" and "Digital Transparency" into the
+              traditional education system.
+            </p>
+
+            <p className="mt-4 font-inter text-sm leading-8 text-[#2f1608]/75">
+              Under his leadership, Gradorra is moving toward an ecosystem where
+              a lack of resources will never stand in the way of one's dreams.
+              His vision is to take GPET to a Pan-India level by 2029 and
+              provide millions of students with a secure and bright digital
+              future.
+            </p>
+
+            <blockquote className="mt-6 rounded-[24px] border border-[#e8732a]/12 bg-[#fffaf7] p-6">
+              <p className="font-montserrat text-xl font-semibold leading-8 text-[#2f1608]">
+                “Merit is the only currency of the future. At Gradorra, we are
+                building the vaults to protect and grow it.”
+              </p>
+              <footer className="mt-3 font-inter text-sm font-medium text-[#e8732a]">
+                — Faisal Khan
+              </footer>
+            </blockquote>
+          </article>
+
+          <aside className="rounded-[28px] border border-[#e8732a]/10 bg-[#fffaf7] p-6 shadow-[0_16px_40px_rgba(232,115,42,0.05)] lg:col-span-4">
+            <h3 className="font-montserrat text-2xl font-bold tracking-[-0.03em] text-[#2f1608]">
+              Building trust at scale
+            </h3>
+
+            <p className="mt-4 font-inter text-sm leading-8 text-[#2f1608]/75">
+              Gradorra combines technology, merit, and secure digital systems to
+              create a student-first ecosystem designed for long-term impact. [web:320]
+            </p>
+
+            <div className="mt-6 rounded-2xl border border-[#e8732a]/12 bg-white p-4">
+              <p className="font-inter text-sm font-medium text-[#2f1608]">
+                An initiative by Faisal Khan.
+              </p>
+              <p className="mt-2 font-inter text-sm text-[#2f1608]/65">
+                © 2026 Gradorra Private Limited | All Rights Reserved.
+              </p>
+            </div>
+          </aside>
         </div>
       </section>
     </main>

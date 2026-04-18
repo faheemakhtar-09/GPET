@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
+import TranslateSwitcher from "../common/translate-switcher";
 
 const navItems = [
   { label: "Home", href: "/" },
@@ -74,6 +75,7 @@ export default function Navbar() {
           <button className="rounded-xl bg-[#E8732A] px-5 py-2.5 font-inter text-sm font-bold text-white shadow-[0_10px_24px_rgba(232,115,42,0.26)] transition duration-200 hover:scale-[1.03] hover:bg-[#D9651F]">
             Register Now
           </button>
+          <TranslateSwitcher />
         </div>
 
         {/* Mobile Toggle */}

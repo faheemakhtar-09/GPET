@@ -16,3 +16,7 @@ body {
     transform: translateX(-50%);
   }
 }
+
+body .skiptranslate iframe{
+  display: none;
+}

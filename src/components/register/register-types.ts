@@ -5,32 +5,64 @@ export type FormData = {
   fullName: string;
   dob: string;
   gender: Gender;
-  district: string;
+
+  fatherName: string;
+  motherName: string;
+
+  country: string;
   state: string;
+  district: string;
+  addressLine: string;
+  pincode: string;
+
   grade: string;
   schoolName: string;
   board: string;
   medium: string;
-  aadhar: string;
-  mobile: string;
-  otp: string;
-  faceCaptured: boolean;
-  faceConsent: boolean;
+
+  aadharNumber: string;
+  aadharFileName: string;
+  identityFileName: string;
+
+  passportPhotoName: string;
+  passportPhotoUrl: string;
+
+  faceVerified: boolean;
+
+  paymentMethod: string;
+  paymentStatus: boolean;
+  transactionId: string;
 };
 
 export const initialForm: FormData = {
   fullName: "",
   dob: "",
   gender: "",
+
+  fatherName: "",
+  motherName: "",
+
+  country: "India",
+  state: "",
   district: "",
-  state: "Uttar Pradesh",
+  addressLine: "",
+  pincode: "",
+
   grade: "",
   schoolName: "",
   board: "",
   medium: "",
-  aadhar: "",
-  mobile: "",
-  otp: "",
-  faceCaptured: false,
-  faceConsent: false,
+
+  aadharNumber: "",
+  aadharFileName: "",
+  identityFileName: "",
+
+  passportPhotoName: "",
+  passportPhotoUrl: "",
+
+  faceVerified: false,
+
+  paymentMethod: "",
+  paymentStatus: false,
+  transactionId: "",
 };

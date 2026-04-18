@@ -4,15 +4,17 @@ import TechTrustSection from "@/features/home/components/tech-trust-section";
 import ProgressPipeline from "@/features/home/components/student-dashboard";
 import TestRoomPreviewSection from "@/features/home/components/TestRoomPreviewSection";
 import RegistrationPreviewSection from "@/features/home/components/RegistrationPreviewSection";
+import SyllabusOverviewSection from "@/features/home/components/syllabus-overview-section";
 export default function Home() {
   return (
-    <main className="pt-20">
+    <>
       <HeroSection />
       <RewardsGallery />
       <TechTrustSection />
+      <SyllabusOverviewSection />
       <ProgressPipeline />
       <TestRoomPreviewSection />
-      <RegistrationPreviewSection />  
-    </main>
+      <RegistrationPreviewSection />
+    </>
   );
 }

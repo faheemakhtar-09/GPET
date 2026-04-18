@@ -10,11 +10,7 @@ export function formatAadhar(value: string) {
   return parts.join("-");
 }
 
-export function formatMobile(value: string) {
-  return value.replace(/\D/g, "").slice(0, 10);
-}
-
-export function formatOtp(value: string) {
+export function formatPincode(value: string) {
   return value.replace(/\D/g, "").slice(0, 6);
 }
 
@@ -43,14 +39,15 @@ export function getStepErrors(step: Step, form: FormData) {
 
   if (step === 1) {
     if (!form.fullName.trim()) next.fullName = "Full name is required.";
-    else if (!/^[A-Za-z\s]+$/.test(form.fullName.trim())) {
-      next.fullName = "Only alphabets are allowed.";
-    }
-
     if (!form.dob) next.dob = "Date of birth is required.";
     if (!form.gender) next.gender = "Gender is required.";
-    if (!form.district.trim()) next.district = "District is required.";
+    if (!form.fatherName.trim()) next.fatherName = "Father's name is required.";
+    if (!form.motherName.trim()) next.motherName = "Mother's name is required.";
+    if (!form.country.trim()) next.country = "Country is required.";
     if (!form.state.trim()) next.state = "State is required.";
+    if (!form.district.trim()) next.district = "District is required.";
+    if (!form.addressLine.trim()) next.addressLine = "Address is required.";
+    if (!/^\d{6}$/.test(form.pincode)) next.pincode = "Enter a valid 6-digit pincode.";
   }
 
   if (step === 2) {
@@ -61,39 +58,168 @@ export function getStepErrors(step: Step, form: FormData) {
   }
 
   if (step === 3) {
-    if (!/^\d{4}-\d{4}-\d{4}$/.test(form.aadhar)) {
-      next.aadhar = "Aadhaar must be in XXXX-XXXX-XXXX format.";
+    if (!/^\d{4}-\d{4}-\d{4}$/.test(form.aadharNumber)) {
+      next.aadharNumber = "Aadhaar must be in XXXX-XXXX-XXXX format.";
     }
-    if (!/^\d{10}$/.test(form.mobile)) {
-      next.mobile = "Enter a valid 10-digit mobile number.";
-    }
-    if (!/^\d{4,6}$/.test(form.otp)) {
-      next.otp = "Enter a valid OTP.";
-    }
+    if (!form.aadharFileName) next.aadharFileName = "Upload Aadhaar card.";
+    if (!form.identityFileName) next.identityFileName = "Upload identity card.";
+    if (!form.passportPhotoName) next.passportPhotoName = "Upload passport photo.";
+    if (!form.faceVerified) next.faceVerified = "Please complete face verification.";
   }
 
   if (step === 4) {
-    if (!form.faceCaptured) {
-      next.faceCaptured = "Please capture your face to continue.";
-    }
-    if (!form.faceConsent) {
-      next.faceConsent = "Please confirm face verification consent.";
-    }
+    if (!form.paymentMethod) next.paymentMethod = "Select payment method.";
+    if (!form.paymentStatus) next.paymentStatus = "Please complete payment.";
+    if (!form.transactionId.trim()) next.transactionId = "Transaction ID is required.";
   }
 
   return next;
 }
 
 export const stepFields = {
-  1: ["fullName", "dob", "gender", "district", "state"],
+  1: [
+    "fullName",
+    "dob",
+    "gender",
+    "fatherName",
+    "motherName",
+    "country",
+    "state",
+    "district",
+    "addressLine",
+    "pincode",
+  ],
   2: ["grade", "schoolName", "board", "medium"],
-  3: ["aadhar", "mobile", "otp"],
-  4: ["faceCaptured", "faceConsent"],
+  3: [
+    "aadharNumber",
+    "aadharFileName",
+    "identityFileName",
+    "passportPhotoName",
+    "faceVerified",
+  ],
+  4: ["paymentMethod", "paymentStatus", "transactionId"],
 } as const;
 
 export const stepTitleMap: Record<Step, string> = {
   1: "Personal Information",
   2: "Academic Details",
-  3: "Verification",
-  4: "Face Capture",
+  3: "Documents & Verification",
+  4: "Payment",
 };
+
+export const indiaStates = [
+  "Andhra Pradesh",
+  "Arunachal Pradesh",
+  "Assam",
+  "Bihar",
+  "Chhattisgarh",
+  "Delhi",
+  "Goa",
+  "Gujarat",
+  "Haryana",
+  "Himachal Pradesh",
+  "Jharkhand",
+  "Karnataka",
+  "Kerala",
+  "Madhya Pradesh",
+  "Maharashtra",
+  "Odisha",
+  "Punjab",
+  "Rajasthan",
+  "Tamil Nadu",
+  "Telangana",
+  "Uttar Pradesh",
+  "Uttarakhand",
+  "West Bengal",
+];
+
+export const districtMap: Record<string, string[]> = {
+  "Uttar Pradesh": [
+    "Agra",
+    "Aligarh",
+    "Allahabad",
+    "Ambedkar Nagar",
+    "Amethi",
+    "Amroha",
+    "Auraiya",
+    "Ayodhya",
+    "Azamgarh",
+    "Baghpat",
+    "Bahraich",
+    "Ballia",
+    "Balrampur",
+    "Banda",
+    "Barabanki",
+    "Bareilly",
+    "Basti",
+    "Bhadohi",
+    "Bijnor",
+    "Budaun",
+    "Bulandshahr",
+    "Chandauli",
+    "Deoria",
+    "Etah",
+    "Etawah",
+    "Farrukhabad",
+    "Fatehpur",
+    "Firozabad",
+    "Gautam Buddha Nagar",
+    "Ghaziabad",
+    "Ghazipur",
+    "Gonda",
+    "Gorakhpur",
+    "Hamirpur",
+    "Hapur",
+    "Hardoi",
+    "Hathras",
+    "Jalaun",
+    "Jaunpur",
+    "Jhansi",
+    "Kannauj",
+    "Kanpur Dehat",
+    "Kanpur Nagar",
+    "Kasganj",
+    "Kaushambi",
+    "Kheri",
+    "Kushinagar",
+    "Lalitpur",
+    "Lucknow",
+    "Maharajganj",
+    "Mahoba",
+    "Mainpuri",
+    "Mathura",
+    "Mau",
+    "Meerut",
+    "Mirzapur",
+    "Moradabad",
+    "Muzaffarnagar",
+    "Pilibhit",
+    "Pratapgarh",
+    "Raebareli",
+    "Rampur",
+    "Saharanpur",
+    "Sambhal",
+    "Sant Kabir Nagar",
+    "Shahjahanpur",
+    "Shamli",
+    "Shravasti",
+    "Siddharthnagar",
+    "Sitapur",
+    "Sonbhadra",
+    "Sultanpur",
+    "Unnao",
+    "Varanasi",
+  ],
+};
+
+export function getDistrictOptions(state: string) {
+  return districtMap[state] || [];
+}
+
+export function generateRegistrationId() {
+  return `GPET-2026-${Math.floor(10000 + Math.random() * 90000)}`;
+}
+
+export function generateTransactionId() {
+  return `TXN${Date.now().toString().slice(-8)}`;
+}
