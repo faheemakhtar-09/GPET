@@ -57,7 +57,9 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-[#2f1608]">Email</p>
-                  <p className="mt-1 text-sm text-[#2f1608]/70">info@gpet.in</p>
+                  <p className="mt-1 text-sm text-[#2f1608]/70">
+                    Partner@gradorra.com
+                  </p>
                 </div>
               </div>
 
@@ -68,7 +70,7 @@ export default function ContactPage() {
                 <div>
                   <p className="text-sm font-semibold text-[#2f1608]">Phone</p>
                   <p className="mt-1 text-sm text-[#2f1608]/70">
-                    +91 98765 43210
+                    +91 98702 57925
                   </p>
                 </div>
               </div>
@@ -80,7 +82,7 @@ export default function ContactPage() {
                 <div>
                   <p className="text-sm font-semibold text-[#2f1608]">Office</p>
                   <p className="mt-1 text-sm text-[#2f1608]/70">
-                    Greater Noida West, Uttar Pradesh, India
+                    Address. Noida Gautam Budh Nagar Uttar Pradesh
                   </p>
                 </div>
               </div>

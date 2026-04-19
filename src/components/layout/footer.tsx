@@ -91,10 +91,10 @@ export default function Footer() {
                       Email Support
                     </p>
                     <a
-                      href="mailto:support@gpet2026.in"
+                      href="mailto:Helpdesk@gradorra.com"
                       className="mt-1 inline-block font-inter text-sm text-[#2f1608]/70 transition hover:text-[#e8732a]"
                     >
-                      support@gpet2026.in
+                      Helpdesk@gradorra.com
                     </a>
                   </div>
                 </div>
@@ -110,7 +110,7 @@ export default function Footer() {
                       Helpline
                     </p>
                     <p className="mt-1 font-inter text-sm text-[#2f1608]/70">
-                      +91 00000 00000
+                      +91 98702 57925
                     </p>
                   </div>
                 </div>
