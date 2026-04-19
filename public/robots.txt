@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://gpet.org.in
+
+# Sitemaps
+Sitemap: https://gpet.org.in/sitemap.xml
