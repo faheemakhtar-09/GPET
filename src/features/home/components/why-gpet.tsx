@@ -42,7 +42,7 @@ const whyGpetCopy = {
       "We have intentionally kept the registration fee at a nominal ₹299 to ensure that every student in Uttar Pradesh—from the bustling hubs of Noida to the remote villages of Purvanchal—can participate without financial hesitation.",
     quote:
       "We have kept the entry barrier minimal so that money never becomes a wall between talent and opportunity.",
-    quoteAuthor: "Faisal Khan (Founder & CEO)",
+    quoteAuthor: "Faisal khan Educationlist | tech visionary",
     founderTitle: "From the Founder’s Desk",
     founderMessage:
       "My mission is to ensure every student in UP recognizes their true worth. GPET provides the 'Solution' before the 'Selection'. Join us to lay the foundation of your professional future today.",
@@ -68,7 +68,7 @@ export default function WhyGpetSection({ lang = "en" }: { lang?: Lang }) {
         <div className="max-w-4xl">
           <SectionBadge>{t.badge}</SectionBadge>
 
-          <h2 className="mt-5 text-[clamp(2.2rem,5vw,4.5rem)] font-bold leading-[0.98] tracking-[-0.04em] text-[#2f1608]">
+          <h2 className="mt-5 text-[clamp(2.2rem,5vw,4.5rem)] font-bold leading-[0.98] tracking-[-0.04em] text-[#e8732a]">
             {t.title}
           </h2>
 
@@ -83,9 +83,9 @@ export default function WhyGpetSection({ lang = "en" }: { lang?: Lang }) {
               key={item.title}
               className="rounded-[24px] border border-[#2f1608]/8 bg-white p-6 shadow-[0_12px_30px_rgba(47,22,8,0.04)]"
             >
-              <h3 className="text-lg font-bold tracking-[-0.02em] text-[#2f1608]">
+              <h2 className="text-lg font-extrabold tracking-[-0.02em] text-[#2f1608]">
                 {item.title}
-              </h3>
+              </h2>
               <p className="mt-3 text-sm leading-7 text-[#2f1608]/74">
                 {item.desc}
               </p>
