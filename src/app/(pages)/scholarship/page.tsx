@@ -4,6 +4,10 @@ type Lang = "en" | "hi";
 
 const rewardsCopy = {
   en: {
+    heroHeading: "India's Biggest AI-Scholarship Exam ",
+    heroSubHeading: "Upto ₹30 Crores in Scholarships & Digital Gadgets",
+    heroBody:
+      "Milestones ke basis par scholarship pool badhta jayega. Jitne zyada students, utna bada reward!",
     badge: "Rewards & Recognition 2026",
     title: "Celebrate Merit",
     highlight: "Up to 30,000+ Physical Rewards",
@@ -59,8 +63,14 @@ const rewardsCopy = {
     ],
     initiative: "An initiative by Faisal Khan.",
     designation: "Founder & CEO, Gradorra Private Limited.",
+    disclaimer:
+      "The total scholarship and reward pool of ₹30 Crores is the maximum estimated value based on a target of 20,00,000 (Twenty Lakh) verified student registrations. The final disbursement of scholarships, electronic gadgets, and rewards will be calculated on a pro-rata basis, proportionate to the actual number of verified registrations and successful test completions at the time of the GPET 2026 exam. Gradorra Private Limited reserves the right to modify the reward structure based on participation metrics. All decisions by the management will be final.",
   },
   hi: {
+    heroHeading: "India's Biggest AI-Scholarship Exam 🚀",
+    heroSubHeading: "Upto ₹30 Crores* in Scholarships & Digital Gadgets",
+    heroBody:
+      "Milestones ke basis par scholarship pool badhta jayega. Jitne zyada students, utna bada reward!",
     badge: "Rewards & Recognition 2026",
     title: "Merit ka Celebration",
     highlight: "Upto 30,000+ तक Physical Rewards",
@@ -116,6 +126,8 @@ const rewardsCopy = {
     ],
     initiative: "Faisal Khan ki ek initiative.",
     designation: "Founder & CEO, Gradorra Private Limited.",
+    disclaimer:
+      "The total scholarship and reward pool of ₹30 Crores is the maximum estimated value based on a target of 20,00,000 (Twenty Lakh) verified student registrations. The final disbursement of scholarships, electronic gadgets, and rewards will be calculated on a pro-rata basis, proportionate to the actual number of verified registrations and successful test completions at the time of the GPET 2026 exam. Gradorra Private Limited reserves the right to modify the reward structure based on participation metrics. All decisions by the management will be final.",
   },
 } as const;
 
@@ -146,12 +158,15 @@ export default function RewardsPage({ lang = "en" }: { lang?: Lang }) {
             <SectionBadge>{t.badge}</SectionBadge>
 
             <h1 className="mt-5 text-[clamp(2.5rem,6vw,5rem)] font-bold leading-[0.96] tracking-[-0.04em] text-[#2f1608]">
-              {t.title}
-              <span className="block text-[#e8732a]">{t.highlight}</span>
+              {t.heroHeading}
             </h1>
 
+            <h2 className="mt-4 text-[clamp(1.8rem,3.5vw,3rem)] font-bold leading-tight tracking-[-0.03em] text-[#e8732a]">
+              {t.heroSubHeading}
+            </h2>
+
             <p className="mt-6 max-w-3xl text-base leading-8 text-[#2f1608]/72 sm:text-lg">
-              {t.subtitle}
+              {t.heroBody}
             </p>
           </div>
         </div>
@@ -173,11 +188,9 @@ export default function RewardsPage({ lang = "en" }: { lang?: Lang }) {
             <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#e8732a]">
               {stateCard.label}
             </p>
-
             <h3 className="mt-2 text-xl font-bold tracking-[-0.02em] text-[#2f1608]">
               {stateCard.subtitle}
             </h3>
-
             <ul className="mt-5 space-y-3">
               {stateCard.points.map((point) => (
                 <li key={point} className="text-sm leading-7 text-[#2f1608]/72">
@@ -186,16 +199,13 @@ export default function RewardsPage({ lang = "en" }: { lang?: Lang }) {
               ))}
             </ul>
           </article>
-
           <article className="rounded-[26px] border border-[#e8732a]/10 bg-[#fffaf7] p-6 shadow-[0_14px_34px_rgba(232,115,42,0.05)]">
             <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#e8732a]">
               {zonalCard.label}
             </p>
-
             <h3 className="mt-2 text-xl font-bold tracking-[-0.02em] text-[#2f1608]">
               {zonalCard.subtitle}
             </h3>
-
             <ul className="mt-5 space-y-3">
               {zonalCard.points.map((point) => (
                 <li key={point} className="text-sm leading-7 text-[#2f1608]/72">
@@ -204,7 +214,6 @@ export default function RewardsPage({ lang = "en" }: { lang?: Lang }) {
               ))}
             </ul>
           </article>
-
           <article className="overflow-hidden rounded-[26px] border border-[#e8732a]/10 bg-[#fffaf7] shadow-[0_14px_34px_rgba(232,115,42,0.05)] lg:col-span-2">
             <div className="grid grid-cols-1 md:grid-cols-2">
               {/* Image */}
@@ -288,6 +297,12 @@ export default function RewardsPage({ lang = "en" }: { lang?: Lang }) {
           </div>
         </div>
       </section>
+
+      <footer className="border-t border-[#e8732a]/10 bg-[#2f1608]">
+        <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+          <p className="text-sm leading-7 text-white/72">{t.disclaimer}</p>
+        </div>
+      </footer>
     </main>
   );
 }
