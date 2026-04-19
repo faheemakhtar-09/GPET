@@ -10,14 +10,18 @@ export const metadata = {
   description:
     "Register for GPET 2026 by Gradorra. Most secure AI-proctored merit test. Win scholarships & digital gadgets. Exclusive for Uttar Pradesh students.",
 
+  verification: {
+    google: "G3R_OUocJhej374KjNgfmQufhd8mZ_TwI-5gGjVzOPY",
+  },
+
   openGraph: {
     title: "GPET 2026 - Digital Gadgets & Scholarship Exam",
     description: "Empowering merit through AI technology.",
-    url: "https://yourdomain.com",
+    url: "https://gpet.org.in",
     siteName: "GPET 2026",
     images: [
       {
-        url: "https://yourdomain.com/banner.jpg", // ⚠️ replace
+        url: "https://gpet.org.in/banner.jpg", // ⚠️ replace
         width: 1200,
         height: 630,
       },
