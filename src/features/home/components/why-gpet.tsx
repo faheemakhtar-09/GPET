@@ -68,7 +68,7 @@ export default function WhyGpetSection({ lang = "en" }: { lang?: Lang }) {
         <div className="max-w-4xl">
           <SectionBadge>{t.badge}</SectionBadge>
 
-          <h2 className="mt-5 text-[clamp(2.2rem,5vw,4.5rem)] font-bold leading-[0.98] tracking-[-0.04em] text-[#2f1608]">
+          <h2 className="mt-5 text-[clamp(2.2rem,5vw,4.5rem)] font-bold leading-[0.98] tracking-[-0.04em] text-[#e8732a]">
             {t.title}
           </h2>
 

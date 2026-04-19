@@ -1,3 +1,5 @@
+import React from "react";
+
 type Lang = "en" | "hi";
 
 const rewardsCopy = {
@@ -37,6 +39,9 @@ const rewardsCopy = {
           "District topper digital badges.",
           "Career roadmap access and internship opportunities.",
         ],
+        image: "/images/merti-scolor.jpeg",
+        imageAlt:
+          "District-level merit dashboard showing Uttar Pradesh districts performance map",
       },
     ],
     policyTitle: "Transparency Policy",
@@ -85,18 +90,21 @@ const rewardsCopy = {
       },
       {
         label: "District Level Achievers",
-        subtitle: "75 districts ke top merit achievers",
+        subtitle: "Top merit across all 75 districts",
         points: [
           "Smartphones, smartwatches, aur bronze medals.",
           "District topper digital badges.",
           "Career roadmap access aur internship opportunities.",
         ],
+        image: "/images/merti-scolor.jpeg",
+        imageAlt:
+          "District-level merit dashboard showing Uttar Pradesh districts performance map",
       },
     ],
     policyTitle: "Transparency Policy",
     policyPoints: [
       "Physical rewards ka final volume total verified participants ke hisab se pro-rated hoga.",
-      '“Upto 30,000 rewards” ka reference 20-Lakh participation milestone par maximum potential reward pool ko dikhata hai.',
+      "“Upto 30,000 rewards” ka reference 20-Lakh participation milestone par maximum potential reward pool ko dikhata hai.",
       "Award disbursement se pehle performance aur identity AI-proctoring aur document audits se verify hongi.",
       "Science, Commerce, aur Arts sab ke liye rewards strictly percentile-based honge.",
     ],
@@ -109,7 +117,7 @@ const rewardsCopy = {
     initiative: "Faisal Khan ki ek initiative.",
     designation: "Founder & CEO, Gradorra Private Limited.",
   },
-};
+} as const;
 
 function SectionBadge({ children }: { children: React.ReactNode }) {
   return (
@@ -121,6 +129,9 @@ function SectionBadge({ children }: { children: React.ReactNode }) {
 
 export default function RewardsPage({ lang = "en" }: { lang?: Lang }) {
   const t = rewardsCopy[lang];
+  const stateCard = t.tierCards[0];
+  const zonalCard = t.tierCards[1];
+  const districtCard = t.tierCards[2];
 
   return (
     <main className="bg-white text-[#2f1608]">
@@ -157,32 +168,78 @@ export default function RewardsPage({ lang = "en" }: { lang?: Lang }) {
           </p>
         </div>
 
-        <div className="mt-10 grid gap-6 lg:grid-cols-3">
-          {t.tierCards.map((card) => (
-            <article
-              key={card.label}
-              className="rounded-[26px] border border-[#e8732a]/10 bg-[#fffaf7] p-6 shadow-[0_14px_34px_rgba(232,115,42,0.05)]"
-            >
-              <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#e8732a]">
-                {card.label}
-              </p>
+        <div className="mt-10 grid gap-6 lg:grid-cols-2">
+          <article className="rounded-[26px] border border-[#e8732a]/10 bg-[#fffaf7] p-6 shadow-[0_14px_34px_rgba(232,115,42,0.05)]">
+            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#e8732a]">
+              {stateCard.label}
+            </p>
 
-              <h3 className="mt-2 text-xl font-bold tracking-[-0.02em] text-[#2f1608]">
-                {card.subtitle}
-              </h3>
+            <h3 className="mt-2 text-xl font-bold tracking-[-0.02em] text-[#2f1608]">
+              {stateCard.subtitle}
+            </h3>
 
-              <ul className="mt-5 space-y-3">
-                {card.points.map((point) => (
-                  <li
-                    key={point}
-                    className="text-sm leading-7 text-[#2f1608]/72"
-                  >
-                    • {point}
-                  </li>
-                ))}
-              </ul>
-            </article>
-          ))}
+            <ul className="mt-5 space-y-3">
+              {stateCard.points.map((point) => (
+                <li key={point} className="text-sm leading-7 text-[#2f1608]/72">
+                  • {point}
+                </li>
+              ))}
+            </ul>
+          </article>
+
+          <article className="rounded-[26px] border border-[#e8732a]/10 bg-[#fffaf7] p-6 shadow-[0_14px_34px_rgba(232,115,42,0.05)]">
+            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#e8732a]">
+              {zonalCard.label}
+            </p>
+
+            <h3 className="mt-2 text-xl font-bold tracking-[-0.02em] text-[#2f1608]">
+              {zonalCard.subtitle}
+            </h3>
+
+            <ul className="mt-5 space-y-3">
+              {zonalCard.points.map((point) => (
+                <li key={point} className="text-sm leading-7 text-[#2f1608]/72">
+                  • {point}
+                </li>
+              ))}
+            </ul>
+          </article>
+
+          <article className="overflow-hidden rounded-[26px] border border-[#e8732a]/10 bg-[#fffaf7] shadow-[0_14px_34px_rgba(232,115,42,0.05)] lg:col-span-2">
+            <div className="grid grid-cols-1 md:grid-cols-2">
+              {/* Image */}
+              <div className="h-full">
+                <img
+                  src={districtCard.image}
+                  alt={districtCard.imageAlt || districtCard.subtitle}
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+
+              {/* Content */}
+              <div className="p-6 sm:p-8 flex flex-col justify-center">
+                <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#e8732a]">
+                  {districtCard.label}
+                </p>
+
+                <h3 className="mt-2 text-[clamp(1.4rem,2.6vw,2rem)] font-bold tracking-[-0.02em] text-[#2f1608]">
+                  {districtCard.subtitle}
+                </h3>
+
+                <ul className="mt-5 space-y-3">
+                  {districtCard.points.map((point) => (
+                    <li
+                      key={point}
+                      className="text-sm leading-7 text-[#2f1608]/72 sm:text-base"
+                    >
+                      • {point}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </article>
         </div>
       </section>
 
@@ -225,9 +282,7 @@ export default function RewardsPage({ lang = "en" }: { lang?: Lang }) {
                 <p className="mt-3 text-lg font-semibold leading-8">
                   {t.initiative}
                 </p>
-                <p className="mt-2 text-sm text-white/72">
-                  {t.designation}
-                </p>
+                <p className="mt-2 text-sm text-white/72">{t.designation}</p>
               </div>
             </div>
           </div>
