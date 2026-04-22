@@ -185,7 +185,8 @@ export default function RewardsPage({ lang = "en" }: { lang?: Lang }) {
           </p>
         </div>
 
-        <div className="mt-10 grid gap-6 lg:grid-cols-2">
+        <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {/* State Card */}
           <article className="rounded-[26px] border border-[#e8732a]/10 bg-[#fffaf7] p-6 shadow-[0_14px_34px_rgba(232,115,42,0.05)]">
             <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#e8732a]">
               {stateCard.label}
@@ -201,6 +202,8 @@ export default function RewardsPage({ lang = "en" }: { lang?: Lang }) {
               ))}
             </ul>
           </article>
+
+          {/* Zonal Card */}
           <article className="rounded-[26px] border border-[#e8732a]/10 bg-[#fffaf7] p-6 shadow-[0_14px_34px_rgba(232,115,42,0.05)]">
             <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#e8732a]">
               {zonalCard.label}
@@ -216,38 +219,22 @@ export default function RewardsPage({ lang = "en" }: { lang?: Lang }) {
               ))}
             </ul>
           </article>
-          <article className="overflow-hidden rounded-[26px] border border-[#e8732a]/10 bg-[#fffaf7] shadow-[0_14px_34px_rgba(232,115,42,0.05)] lg:col-span-2">
-            <div className="grid grid-cols-1 md:grid-cols-2">
-              <div className="h-full">
-                <img
-                  src={districtCard.image}
-                  alt={
-                    districtCard.imageAlt ||
-                    "District-level achievement representation"
-                  }
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                />
-              </div>
-              <div className="p-6 sm:p-8 flex flex-col justify-center">
-                <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#e8732a]">
-                  {districtCard.label}
-                </p>
-                <h3 className="mt-2 text-[clamp(1.4rem,2.6vw,2rem)] font-bold tracking-[-0.02em] text-[#2f1608]">
-                  {districtCard.subtitle}
-                </h3>
-                <ul className="mt-5 space-y-3">
-                  {districtCard.points.map((point) => (
-                    <li
-                      key={point}
-                      className="text-sm leading-7 text-[#2f1608]/72 sm:text-base"
-                    >
-                      • {point}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
+
+          {/* District Card (Converted to simple card) */}
+          <article className="rounded-[26px] border border-[#e8732a]/10 bg-[#fffaf7] p-6 shadow-[0_14px_34px_rgba(232,115,42,0.05)]">
+            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#e8732a]">
+              {districtCard.label}
+            </p>
+            <h3 className="mt-2 text-xl font-bold tracking-[-0.02em] text-[#2f1608]">
+              {districtCard.subtitle}
+            </h3>
+            <ul className="mt-5 space-y-3">
+              {districtCard.points.map((point) => (
+                <li key={point} className="text-sm leading-7 text-[#2f1608]/72">
+                  • {point}
+                </li>
+              ))}
+            </ul>
           </article>
         </div>
       </section>

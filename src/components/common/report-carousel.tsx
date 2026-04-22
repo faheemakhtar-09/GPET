@@ -26,7 +26,7 @@ const slidesData: SlideItem[] = [
     tag: "Career Diagnostic Report",
   },
   {
-    image: "/images/cr/image2.png",
+    image: "/images/cr/img3.png",
     alt: "GPET digital education overview report",
     tag: "Digital Education Overview",
   },

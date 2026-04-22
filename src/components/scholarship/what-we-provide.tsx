@@ -29,7 +29,7 @@ const provideItems: ProvideItem[] = [
     title: "Smartwatch",
     description:
       "Smart wearables that support time management, focus, daily routine tracking, and productivity discipline.",
-    image: "/images/rewards/smartwtch.png",
+    image: "/images/rewards/wath.jpeg",
   },
   {
     title: "Educational Kit",
