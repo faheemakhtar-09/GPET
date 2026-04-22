@@ -1,5 +1,6 @@
 import React from "react";
 import WhatWeProvideSection from "@/components/scholarship/what-we-provide";
+import ReportCarousel from "@/components/common/report-carousel";
 
 type Lang = "en" | "hi";
 
@@ -296,7 +297,7 @@ export default function RewardsPage({ lang = "en" }: { lang?: Lang }) {
           </div>
         </div>
       </section>
-
+      <ReportCarousel />
       <footer className="border-t border-[#e8732a]/10 bg-[#2f1608]">
         <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
           <p className="text-sm leading-7 text-white/72">{t.disclaimer}</p>

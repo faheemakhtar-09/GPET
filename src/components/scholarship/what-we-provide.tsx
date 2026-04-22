@@ -11,31 +11,31 @@ const provideItems: ProvideItem[] = [
     title: "High-Performance Laptop",
     description:
       "Powerful laptops built for advanced study, online learning, projects, productivity, and long-term academic performance.",
-    image: "/images/rewards/laptop.png",
+    image: "/images/rewards/lp.jpeg",
   },
   {
     title: "Advanced Tablet",
     description:
       "Modern tablets for digital notes, e-books, practice tests, recorded lectures, and flexible study anywhere.",
-    image: "/images/rewards/tablet.jpg",
+    image: "/images/rewards/tablet.jpeg",
   },
   {
     title: "Smartphone",
     description:
       "Smartphones that keep students connected to learning apps, updates, communication tools, and academic resources.",
-    image: "/images/rewards/smartphone2.png",
+    image: "/images/rewards/mob.png",
   },
   {
     title: "Smartwatch",
     description:
       "Smart wearables that support time management, focus, daily routine tracking, and productivity discipline.",
-    image: "/images/rewards/smartwatch.jpg",
+    image: "/images/rewards/smartwtch.png",
   },
   {
     title: "Educational Kit",
     description:
       "Curated learning materials, exam support resources, guidance tools, and academic essentials for better preparation.",
-    image: "/images/rewards/educational-kit.png",
+    image: "/images/rewards/kit.jpeg",
   },
 ];
 
